@@ -1,0 +1,1 @@
+struct<Timestamp:timestamp,Tag_Full:string,Value_String:string,DataType:string,Value_Numeric:double,Reason_No_Data:string>

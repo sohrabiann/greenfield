@@ -1,0 +1,32 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Encrypted credentials, environment files
+.env
+secrets.json
+
+# Large data directories
+volumes/
+# Uncomment below to ignore sample data if you don't want to commit it
+# samples/
+
+# log files
+*.log

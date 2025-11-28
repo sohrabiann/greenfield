@@ -1,0 +1,446 @@
+Area,Tag_Full,INstrumentation_Location,Instrumentation_Type_,Instrumentation_Data_Type,Instrumentation_Data_Type_Meaning,INstrumentation_Type_Description,Role,Instrumentation_Description,Related_Location_Cleaned
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TT18110.MEAS,TT-18110,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,COMBUSTION DEMAND CONTROL,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TT18111.MEAS,TT-18111,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,COMBUSTION DEMAND CONTROL,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:FT18112.MEAS,FT-18112,FT,MEAS,Measured value (PV),Flow transmitter,Measurement,COMBUSTION DEMAND CONTROL,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:FQ18112_24H.OUT,FQ-18112_24H,FQ,OUT,Controller output / demand (CO),Flow total/quantity (calculated),Output/Demand,,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:FQ18112_24H-DELTA.OUT,FQ-18112_24H-DELTA,FQ,OUT,Controller output / demand (CO),Flow total/quantity (calculated),Output/Demand,NATURAL GAS FLOW INDICATION,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:IT18114.MEAS,IT-18114,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,NATURAL GAS FLOW INDICATION,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:SI18114.MEAS,SI-18114,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,COMBUSTION AIR FAN CURRENT,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:SY18114.OUT,SY-18114,SY,OUT,Controller output / demand (CO),Speed output (VFD demand),Output/Demand,BL1825 CURRENT INDICATION,BL-1825
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:FIC18116.MEAS,FIC-18116,FIC,MEAS,Measured value (PV),Flow indicating controller,Measurement,PRODUCT COOLER PRESS INDICATION,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:FIC18116.OUT,FIC-18116,FIC,OUT,Controller output / demand (CO),Flow indicating controller,Output/Demand,PRODUCT COOLER DIFF PRESS INDICATION,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:FIC18116.SPT,FIC-18116,FIC,SPT,Setpoint (SP),Flow indicating controller,Setpoint,FIREBOX PRESSURE,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XA18116A.CIN,XA-18116A,XA,CIN,Contact input (discrete),Contact input (BMS/CCS interlocks),Discrete Input,FIREBOX PRESSURE,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XA18116B.CIN,XA-18116B,XA,CIN,Contact input (discrete),Contact input (BMS/CCS interlocks),Discrete Input,FIREBOX PRESSURE,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XA18116C.CIN,XA-18116C,XA,CIN,Contact input (discrete),Contact input (BMS/CCS interlocks),Discrete Input,DUST COLLECTOR OUTLET PRESSURE,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XA18116D.CIN,XA-18116D,XA,CIN,Contact input (discrete),Contact input (BMS/CCS interlocks),Discrete Input,DUST COLLECTOR OUTLET PRESSURE,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XA18116E.CIN,XA-18116E,XA,CIN,Contact input (discrete),Contact input (BMS/CCS interlocks),Discrete Input,DUST COLLECTOR OUTLET PRESSURE,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TY18117.OUT,TY-18117,TY,OUT,Controller output / demand (CO),Temperature final element demand (valve/damper),Output/Demand,PRODUCT COOLER PRESS INDICATION,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TIC18117A.MEAS,TIC-18117A,TIC,MEAS,Measured value (PV),Temperature indicating controller,Measurement,DUST COLLECTOR OUTLET PRESSURE,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TIC18117A.OUT,TIC-18117A,TIC,OUT,Controller output / demand (CO),Temperature indicating controller,Output/Demand,BL1825 SPEED OUTPUT,BL-1825
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TIC18117A.SPT,TIC-18117A,TIC,SPT,Setpoint (SP),Temperature indicating controller,Setpoint,COMBUSTION AIR FAN SPEED,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:ZT18117A.MEAS,ZT-18117A,ZT,MEAS,Measured value (PV),Valve/actuator position feedback,Measurement,BL1825 SPEED,BL-1825
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TIC18117B.MEAS,TIC-18117B,TIC,MEAS,Measured value (PV),Temperature indicating controller,Measurement,COMBUSTION AIR FAN SPEED OUT,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TIC18117B.OUT,TIC-18117B,TIC,OUT,Controller output / demand (CO),Temperature indicating controller,Output/Demand,COLD GAS RECYCLE TEMPERATURE,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TIC18117B.SPT,TIC-18117B,TIC,SPT,Setpoint (SP),Temperature indicating controller,Setpoint,COLD GAS RECYCLE TEMPERATURE,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:ZT18117B.MEAS,ZT-18117B,ZT,MEAS,Measured value (PV),Valve/actuator position feedback,Measurement,COLD GAS RECYCLE TEMPERATURE,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XV18119.STAIND,XV-18119,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,HOT GAS RECYCLE TEMPERATURE,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XV18120.STAIND,XV-18120,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,HOT GAS RECYCLE TEMPERATURE,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XV18121.STAIND,XV-18121,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,HOT GAS RECYCLE TEMPERATURE,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:TT18123.MEAS,TT-18123,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,COMBUSTION AIR TEMP,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:PT18125.MEAS,PT-18125,PT,MEAS,Measured value (PV),Pressure transmitter,Measurement,COMBUSTION AIR TEMP,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:PIC18133.MEAS,PIC-18133,PIC,MEAS,Measured value (PV),Pressure indicating controller,Measurement,COMBINED RECYCLE GAS TEMP,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:PIC18133.OUT,PIC-18133,PIC,OUT,Controller output / demand (CO),Pressure indicating controller,Output/Demand,BL1825 INLET TEMPERATURE,BL-1825
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:PIC18133.SPT,PIC-18133,PIC,SPT,Setpoint (SP),Pressure indicating controller,Setpoint,BL1825 BEARING TEMP,BL-1825
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TT18134.MEAS,TT-18134,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,BL1825 BEARING TEMP,BL-1825
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TT18135.MEAS,TT-18135,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,BL1825 WINDING TEMP,BL-1825
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:AT18140.MEAS,AT-18140,AT,MEAS,Measured value (PV),"Analyzer transmitter (e.g., O2)",Measurement,BL1825 WINDING TEMP,BL-1825
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:PT18140.MEAS,PT-18140,PT,MEAS,Measured value (PV),Pressure transmitter,Measurement,BL1825 WINDING TEMP,BL-1825
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:TT18140.MEAS,TT-18140,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DUST COLLECTOR INLET TEMPERATURE,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:XA18140A.CIN,XA-18140A,XA,CIN,Contact input (discrete),Contact input (BMS/CCS interlocks),Discrete Input,COLD GAS RECYCLE TEMPERATURE SELECT,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:XA18140B.CIN,XA-18140B,XA,CIN,Contact input (discrete),Contact input (BMS/CCS interlocks),Discrete Input,BMS RELEASE TO MODULATE,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:AT18141.MEAS,AT-18141,AT,MEAS,Measured value (PV),"Analyzer transmitter (e.g., O2)",Measurement,BMS BURNER START CONFIRM,
+CH-DRYER_A,CH-DRYER_A:SSL18141.CIN,SSL-18141,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,BMS LOCAL/REMOTE MODE,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:XA18141A.CIN,XA-18141A,XA,CIN,Contact input (discrete),Contact input (BMS/CCS interlocks),Discrete Input,BMS LOCKOUT,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:XA18141B.CIN,XA-18141B,XA,CIN,Contact input (discrete),Contact input (BMS/CCS interlocks),Discrete Input,CCS ALARM,
+CH-DRYER_A,CH-DRYER_A:XV18142.STAIND,XV-18142,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,PARTICULATE INDICATION,
+CH-DRYER_A,CH-DRYER_A:SIC18143.MEAS,SIC-18143,SIC,MEAS,Measured value (PV),Speed/flow indicating controller,Measurement,PARTICULATE INDICATION,
+CH-DRYER_A,CH-DRYER_A:SIC18143.OUT,SIC-18143,SIC,OUT,Controller output / demand (CO),Speed/flow indicating controller,Output/Demand,PARTICULATE INDICATION,
+CH-DRYER_A,CH-DRYER_A:SIC18143.SPT,SIC-18143,SIC,SPT,Setpoint (SP),Speed/flow indicating controller,Setpoint,PARTICULATE INDICATION,
+CH-DRYER_A,CH-DRYER_A:IT18143A.MEAS,IT-18143A,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,TOX MIXING CHAMBER ACCESS DOOR,
+CH-DRYER_A,CH-DRYER_A:SI18143A.MEAS,SI-18143A,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,E1825 HEX LOWER DOOR,E-1825
+CH-DRYER_A,CH-DRYER_A:SY18143A.OUT,SY-18143A,SY,OUT,Controller output / demand (CO),Speed output (VFD demand),Output/Demand,E1825 HEX LOWER VENT DOOR,E-1825
+CH-DRYER_A,CH-DRYER_A:IT18143B.MEAS,IT-18143B,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,HEATER RECOVERY ISOLATION DAMPER,
+CH-DRYER_A,CH-DRYER_A:SI18143B.MEAS,SI-18143B,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,STACK ISOLATION DAMPER,
+CH-DRYER_A,CH-DRYER_A:SY18143B.OUT,SY-18143B,SY,OUT,Controller output / demand (CO),Speed output (VFD demand),Output/Demand,COLD GAS RECYCLE TEMP VALVE POS,
+CH-DRYER_A,CH-DRYER_A:IT18143C.MEAS,IT-18143C,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,HOT GAS RECYCLE TEMP VALVE POS,
+CH-DRYER_A,CH-DRYER_A:SI18143C.MEAS,SI-18143C,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,DUST COLLECTOR OUTLET POSITION,
+CH-DRYER_A,CH-DRYER_A:IT18143D.MEAS,IT-18143D,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,CV1831 CURRENT INDICATION,CV-1831
+CH-DRYER_A,CH-DRYER_A:SI18143D.MEAS,SI-18143D,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,CV1832 CURRENT INDICATION,CV-1832
+CH-DRYER_A,CH-DRYER_A:XV18144.STAIND,XV-18144,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,RV1831 CURRENT INDICATION,RV-1831
+CH-DRYER_A,CH-DRYER_A:TY18147.OUT,TY-18147,TY,OUT,Controller output / demand (CO),Temperature final element demand (valve/damper),Output/Demand,RV1832CURRENT INDICATION,RV-1832
+CH-DRYER_A,CH-DRYER_A:TIC18147A.MEAS,TIC-18147A,TIC,MEAS,Measured value (PV),Temperature indicating controller,Measurement,CV1831 SPEED SWITCH,CV-1831
+CH-DRYER_A,CH-DRYER_A:TIC18147A.OUT,TIC-18147A,TIC,OUT,Controller output / demand (CO),Temperature indicating controller,Output/Demand,CV1832 SPEED SWITCH,CV-1832
+CH-DRYER_A,CH-DRYER_A:TIC18147A.SPT,TIC-18147A,TIC,SPT,Setpoint (SP),Temperature indicating controller,Setpoint,RV1831 SPEED SWITCH,RV-1831
+CH-DRYER_A,CH-DRYER_A:TIC18147B.MEAS,TIC-18147B,TIC,MEAS,Measured value (PV),Temperature indicating controller,Measurement,RV1832 SPEED SWITCH,RV-1832
+CH-DRYER_A,CH-DRYER_A:TIC18147B.OUT,TIC-18147B,TIC,OUT,Controller output / demand (CO),Temperature indicating controller,Output/Demand,CY1826 TOP TEMP,CY-1826
+CH-DRYER_A,CH-DRYER_A:TIC18147B.SPT,TIC-18147B,TIC,SPT,Setpoint (SP),Temperature indicating controller,Setpoint,CY1826 MID TEMP,CY-1826
+CH-DRYER_A,CH-DRYER_A:XV18148.STAIND,XV-18148,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,CY1826 BOTTOM TEMP,CY-1826
+CH-DRYER_A,CH-DRYER_A:IT18149.MEAS,IT-18149,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,CY1827 TOP TEMP,CY-1827
+CH-DRYER_A,CH-DRYER_A:SSL18149.CIN,SSL-18149,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,CY1827 MID TEMP,CY-1827
+CH-DRYER_A,CH-DRYER_A:IT18150.MEAS,IT-18150,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,CY1827 BOTTOM TEMP,CY-1827
+CH-DRYER_A,CH-DRYER_A:SSL18150.CIN,SSL-18150,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,CY18278 TOP TEMP,CY-18278
+CH-DRYER_A,CH-DRYER_A:IT18151.MEAS,IT-18151,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,CY1828 MID TEMP,CY-1828
+CH-DRYER_A,CH-DRYER_A:SSL18151.CIN,SSL-18151,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,CY1828 BOTTOM TEMP,CY-1828
+CH-DRYER_A,CH-DRYER_A:IT18152.MEAS,IT-18152,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,CY1829 TOP TEMP,CY-1829
+CH-DRYER_A,CH-DRYER_A:SI18152.MEAS,SI-18152,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,CY1829 MID TEMP,CY-1829
+CH-DRYER_A,CH-DRYER_A:SSL18152.CIN,SSL-18152,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,CY1829 BOTTOM TEMP,CY-1829
+CH-DRYER_A,CH-DRYER_A:SY18152.OUT,SY-18152,SY,OUT,Controller output / demand (CO),Speed output (VFD demand),Output/Demand,CYCLONE EXHAUST DOOR,
+CH-DRYER_A,CH-DRYER_A:FIC18153.MEAS,FIC-18153,FIC,MEAS,Measured value (PV),Flow indicating controller,Measurement,CYCLONE EXHAUST DOOR,
+CH-DRYER_A,CH-DRYER_A:FIC18153.OUT,FIC-18153,FIC,OUT,Controller output / demand (CO),Flow indicating controller,Output/Demand,UTIITY WATER TO CYCLONES,
+CH-DRYER_A,CH-DRYER_A:FIC18153.SPT,FIC-18153,FIC,SPT,Setpoint (SP),Flow indicating controller,Setpoint,FIRE WATER FREEZE INDICATION,
+CH-DRYER_A,CH-DRYER_A:WIC18153.MEAS,WIC-18153,WIC,MEAS,Measured value (PV),Weight indicating controller,Measurement,FIRE WATER FREEZE INDICATION,
+CH-DRYER_A,CH-DRYER_A:WIC18153.OUT,WIC-18153,WIC,OUT,Controller output / demand (CO),Weight indicating controller,Output/Demand,FIRE WATER FREEZE INDICATION,
+CH-DRYER_A,CH-DRYER_A:WIC18153.SPT,WIC-18153,WIC,SPT,Setpoint (SP),Weight indicating controller,Setpoint,FIRE WATER FREEZE INDICATION,
+CH-DRYER_A,CH-DRYER_A:ZT18153.MEAS,ZT-18153,ZT,MEAS,Measured value (PV),Valve/actuator position feedback,Measurement,FIRE WATER FREEZE INDICATION,
+CH-DRYER_A,CH-DRYER_A:IT18153A.MEAS,IT-18153A,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,FIRE WATER FREEZE INDICATION,
+CH-DRYER_A,CH-DRYER_A:SI18153A.MEAS,SI-18153A,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,FIRE WATER FREEZE INDICATION,
+CH-DRYER_A,CH-DRYER_A:SSL18153A.CIN,SSL-18153A,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,FIRE WATER FREEZE INDICATION,
+CH-DRYER_A,CH-DRYER_A:SY18153A.OUT,SY-18153A,SY,OUT,Controller output / demand (CO),Speed output (VFD demand),Output/Demand,FIRE WATER FREEZE INDICATION,
+CH-DRYER_A,CH-DRYER_A:IT18153B.MEAS,IT-18153B,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,HV35441,HV-35441
+CH-DRYER_A,CH-DRYER_A:SI18153B.MEAS,SI-18153B,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,H1825 EXCESS O2 SENSOR 1,H-1825
+CH-DRYER_A,CH-DRYER_A:SSL18153B.CIN,SSL-18153B,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,H1825 EXCESS O2 SENSOR 2,H-1825
+CH-DRYER_A,CH-DRYER_A:SY18153B.OUT,SY-18153B,SY,OUT,Controller output / demand (CO),Speed output (VFD demand),Output/Demand,BL1829 CURRENT INDICATION,BL-1829
+CH-DRYER_A,CH-DRYER_A:IT18154.MEAS,IT-18154,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,E1825 HEAT EX INLET PRESS,E-1825
+CH-DRYER_A,CH-DRYER_A:SSL18154.CIN,SSL-18154,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,DRUM DR INLET PRESSURE,
+CH-DRYER_A,CH-DRYER_A:IT18155.MEAS,IT-18155,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,CYCLONE OUTLET PRESSURE,
+CH-DRYER_A,CH-DRYER_A:SSL18155.CIN,SSL-18155,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,BL1829 SPEED INDICATION,BL-1829
+CH-DRYER_A,CH-DRYER_A:IT18156.MEAS,IT-18156,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,E1825 HEAT EXVHANGER INLET TEMP,E-1825
+CH-DRYER_A,CH-DRYER_A:SSL18156.CIN,SSL-18156,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,DRUM DR INLET TEMP,
+CH-DRYER_A,CH-DRYER_A:PT18160.MEAS,PT-18160,PT,MEAS,Measured value (PV),Pressure transmitter,Measurement,BL1829 BEARING TEMP,BL-1829
+CH-DRYER_A,CH-DRYER_A:FIC18161.MEAS,FIC-18161,FIC,MEAS,Measured value (PV),Flow indicating controller,Measurement,BL1829 BEARING TEMP,BL-1829
+CH-DRYER_A,CH-DRYER_A:FIC18161.OUT,FIC-18161,FIC,OUT,Controller output / demand (CO),Flow indicating controller,Output/Demand,BL1829 WINDING TEMP,BL-1829
+CH-DRYER_A,CH-DRYER_A:FIC18161.SPT,FIC-18161,FIC,SPT,Setpoint (SP),Flow indicating controller,Setpoint,BL1829 WINDING TEMP,BL-1829
+CH-DRYER_A,CH-DRYER_A:ZT18161.MEAS,ZT-18161,ZT,MEAS,Measured value (PV),Valve/actuator position feedback,Measurement,BL1820 WINDING TEMP,BL-1820
+CH-DRYER_A,CH-DRYER_A:PIC18164.MEAS,PIC-18164,PIC,MEAS,Measured value (PV),Pressure indicating controller,Measurement,O2 SENSOR 1 CALIBRATING,
+CH-DRYER_A,CH-DRYER_A:PIC18164.OUT,PIC-18164,PIC,OUT,Controller output / demand (CO),Pressure indicating controller,Output/Demand,O2 SENSOR 1 CALIBRATION FAILED,
+CH-DRYER_A,CH-DRYER_A:PIC18164.SPT,PIC-18164,PIC,SPT,Setpoint (SP),Pressure indicating controller,Setpoint,O2 SENSOR 2 CALIBRATING,
+CH-DRYER_A,CH-DRYER_A:ZT18164.MEAS,ZT-18164,ZT,MEAS,Measured value (PV),Valve/actuator position feedback,Measurement,O2 SENSOR 2 CALIBRATION FAILED,
+CH-DRYER_A,CH-DRYER_A:PDI18165.RO01,PDI-18165,PDI,RO01,Binary/relay output channel,Differential pressure indication,,CYCLONES DUST EMISSION CONC,
+CH-DRYER_A,CH-DRYER_A:PT18165A.MEAS,PT-18165A,PT,MEAS,Measured value (PV),Pressure transmitter,Measurement,CYCLONES DUST EMISSION CONCE,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:PT18165B.MEAS,PT-18165B,PT,MEAS,Measured value (PV),Pressure transmitter,Measurement,CYCLONES DUST EMISSION CONC,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:TT18166A.MEAS,TT-18166A,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,CYCLONES DUST EMISSION CONCE,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:TT18166B.MEAS,TT-18166B,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,SYRUP FLOW,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:TT18166C.MEAS,TT-18166C,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,SYRUP FLOW,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:TT18167A.MEAS,TT-18167A,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,SYRUP FLOW,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:TT18167B.MEAS,TT-18167B,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,HOT WATER FLOW,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:TT18167C.MEAS,TT-18167C,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,HOT WATER FLOW,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:TT18168A.MEAS,TT-18168A,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,HOT WATER FLOW,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:TT18168B.MEAS,TT-18168B,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRUM DR1826 MOTOR A AMPERAGE,DR-1826
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:TT18168C.MEAS,TT-18168C,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRUM DR1826 MOTOR B AMPERAGE,DR-1827
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:TT18169A.MEAS,TT-18169A,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRUM DR1826 MOTOR C AMPERAGE,DR-1828
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:TT18169B.MEAS,TT-18169B,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRUM DR1826 MOTOR D AMPERAGE,DR-1829
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:TT18169C.MEAS,TT-18169C,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,CV1828 CURRENT INDICATION,CV-1828
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:IT18170.MEAS,IT-18170,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,RV1828 AMPERAGE,RV-1828
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:SSL18170.CIN,SSL-18170,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,0,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:IT18171.MEAS,IT-18171,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,CV1833 MOTOR CURRENT,CV-1833
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:SSL18171.CIN,SSL-18171,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,CV1826A CURRENT INDICATION,CV-1826A
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:IT18172.MEAS,IT-18172,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,CV1826B CURRENT INDICATION,CV-1826B
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:SSL18172.CIN,SSL-18172,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,CV1827 CURRENT INDICATION,CV-1827
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:IT18173.MEAS,IT-18173,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,MX1827 CURRENT INDICATION,MX-1827
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:SSL18173.CIN,SSL-18173,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,RV1830 CURRENT INDICATION,RV-1830
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:XV18174.STAIND,XV-18174,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,DRYER A DIFF PRESSURE,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:XV18176.STAIND,XV-18176,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,STEAM PRESSURE,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:XI18178A.MEAS,XI-18178A,XI,MEAS,Measured value (PV),"Analyzer/indicator input (e.g., dust emission)",Measurement,STEAM PRESSURE,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:XT18178A.MEAS,XT-18178A,XT,MEAS,Measured value (PV),Aux/secondary input channel for same analyzer,Measurement,STEAM PRESSURE,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:XI18178B.MEAS,XI-18178B,XI,MEAS,Measured value (PV),"Analyzer/indicator input (e.g., dust emission)",Measurement,HOT WATER PRESSURE,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:XT18178B.MEAS,XT-18178B,XT,MEAS,Measured value (PV),Aux/secondary input channel for same analyzer,Measurement,CYCLONE INLET PRESSURE,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:IT18179.MEAS,IT-18179,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,150# STEAM SUPPLY PRESSURE,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:SI18179.MEAS,SI-18179,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,TRUNNION A SPEED FEEDBACK,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:TT18179A.MEAS,TT-18179A,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,TRUNNION B SPEED FEEDBACK,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:TT18179B.MEAS,TT-18179B,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,TRUNNION C SPEED FEEDBACK,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:TT18179C.MEAS,TT-18179C,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,TRUNNION D SPEED FEEDBACK,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:TT18179D.MEAS,TT-18179D,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,CV1833 SPEED INDICATION,CV-1833
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:TT18179E.MEAS,TT-18179E,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,CV1826B SPEED INDICATION,CV-1826B
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:IT18180.MEAS,IT-18180,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,CV1826B SPEED  INDICATION,CV-1826B
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:PY18180.OUT,PY-18180,PY,OUT,Controller output / demand (CO),Pressure final element demand (valve pos/demand),Output/Demand,DRUM DR1826 SPEED CONTROL,DR-1826
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:SI18180.MEAS,SI-18180,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,DRUM DR1826 SPEED CONTROL,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TT18180A.MEAS,TT-18180A,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRUM DR1826 SPEED CONTROL,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TT18180B.MEAS,TT-18180B,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRUM DR1826 SPEED SWITCH,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TT18180C.MEAS,TT-18180C,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,CV1828 SPEED SWITCH,CV-1828
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TT18180D.MEAS,TT-18180D,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,RV1828 SPEED SWITCH,RV-1828
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TT18180E.MEAS,TT-18180E,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,RECYCLE DRAG CONVEYOR SPEED SW,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XV18182.STAIND,XV-18182,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,CV1833 SPEED SWITCH,CV-1833
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XV18183.STAIND,XV-18183,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,CV1826A SPEED SWITCH,CV-1826A
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:XV18184.STAIND,XV-18184,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,CV1826B SPEED SWITCH,CV-1826B
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:PD18215.PNT,PD-18215,PD,PNT,Point value / indication,Pressure indication,Indication,CV1827 SPEED SWITCH,CV-1827
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:PDI18215.PNT,PDI-18215,PDI,PNT,Point value / indication,Differential pressure indication,Indication,MX1827 SPEED SWITCH,MX-1827
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:PIC18215.MEAS,PIC-18215,PIC,MEAS,Measured value (PV),Pressure indicating controller,Measurement,RV1830 SPEED SWITCH,RV-1830
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:PIC18215.OUT,PIC-18215,PIC,OUT,Controller output / demand (CO),Pressure indicating controller,Output/Demand,DRUM DR1826 MOTOR 1 CONTROL,DR-1826
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:PIC18215.SPT,PIC-18215,PIC,SPT,Setpoint (SP),Pressure indicating controller,Setpoint,DR1826 MASTR 2 MOTR SPD CTRL,DR-1826
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:ZT18215.MEAS,ZT-18215,ZT,MEAS,Measured value (PV),Valve/actuator position feedback,Measurement,CV1833 SPEED CONTROL,CV-1833
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:PT18215A.MEAS,PT-18215A,PT,MEAS,Measured value (PV),Pressure transmitter,Measurement,CV1826A SPEEDOUTPUT,CV-1826A
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:PT18215B.MEAS,PT-18215B,PT,MEAS,Measured value (PV),Pressure transmitter,Measurement,CV1826B SPEEDOUTPUT,CV-1826B
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:TT18218.MEAS,TT-18218,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRYER EXH TEMP DOSING BIN,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XI18223A.MEAS,XI-18223A,XI,MEAS,Measured value (PV),"Analyzer/indicator input (e.g., dust emission)",Measurement,DRYER EXH TEMP DOSING BIN,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XT18223A.MEAS,XT-18223A,XT,MEAS,Measured value (PV),Aux/secondary input channel for same analyzer,Measurement,DRYER EXH TEMP DOSING BIN,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XI18223B.MEAS,XI-18223B,XI,MEAS,Measured value (PV),"Analyzer/indicator input (e.g., dust emission)",Measurement,DRYER EXH TEMP DOSING BIN,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:XT18223B.MEAS,XT-18223B,XT,MEAS,Measured value (PV),Aux/secondary input channel for same analyzer,Measurement,DRYER EXH TEMP DOSING BIN,
+CH-DRYER_A,CH-DRYER_A:PT18603.MEAS,PT-18603,PT,MEAS,Measured value (PV),Pressure transmitter,Measurement,DRYER EXH TEMP DOSING BIN,
+CH-DRYER_A,CH-DRYER_A:TT18603.MEAS,TT-18603,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,M1837 TEMPERATURE,M-1837
+CH-DRYER_A,CH-DRYER_A:TIC18615.MEAS,TIC-18615,TIC,MEAS,Measured value (PV),Temperature indicating controller,Measurement,M1837 TEMPERATURE,M-1837
+CH-DRYER_A,CH-DRYER_A:TIC18615.OUT,TIC-18615,TIC,OUT,Controller output / demand (CO),Temperature indicating controller,Output/Demand,M1837 TEMPERATURE,M-1837
+CH-DRYER_A,CH-DRYER_A:TIC18615.SPT,TIC-18615,TIC,SPT,Setpoint (SP),Temperature indicating controller,Setpoint,150# STEAM SUPPLY PRESSURE,
+CH-DRA_FIRE_WTR,CH-DRA_FIRE_WTR:TT31111.MEAS,TT-31111,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRYER EXH TEMP HIGH SELECT,
+CH-DRA_FIRE_WTR,CH-DRA_FIRE_WTR:TT31112.MEAS,TT-31112,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DOSING BIN WEIGHT,
+CH-DRA_FIRE_WTR,CH-DRA_FIRE_WTR:XV35405.STAIND,XV-35405,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,DOSING BIN WEIGHT,
+CH-DRA_FIRE_WTR,CH-DRA_FIRE_WTR:TT35444.MEAS,TT-35444,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DOSING BIN WEIGHT,
+CH-DRA_FIRE_WTR,CH-DRA_FIRE_WTR:TT35445.MEAS,TT-35445,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRUM DR1826 ACCESS DOOR,DR-1826
+CH-DRA_FIRE_WTR,CH-DRA_FIRE_WTR:TT35446.MEAS,TT-35446,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,Pump Permissive P1836,
+CH-DRA_FIRE_WTR,CH-DRA_FIRE_WTR:TT35447.MEAS,TT-35447,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DISCHARGE ELBOW DOOR,
+CH-DRA_FIRE_WTR,CH-DRA_FIRE_WTR:TT35448.MEAS,TT-35448,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,SYRUP VALVE FEEDBACK,
+CH-DRA_FIRE_WTR,CH-DRA_FIRE_WTR:TT35449.MEAS,TT-35449,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,HOT WATER FLOW VALVE FEEDBACK,
+CH-DRA_FIRE_WTR,CH-DRA_FIRE_WTR:TT35457.MEAS,TT-35457,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,STEAM PRESSURE VALVE FEEDBACK,
+CH-ML,CH-ML:DDGSbuilding.Hunter.Lab.L,DDGSbuilding,KPI,,,KPI/Calculated,KPI/Calc,Uptime Hours,
+CH-ML,CH-ML:DDGSbuilding.Percent.Balling,DDGSbuilding,KPI,,,KPI/Calculated,KPI/Calc,Uptime Percent,
+CH-DRYER_A,CH-DRYER_A:HV18158.BO01,HV-18158,HV,BO01,Binary/relay output channel,Hand/hood valve or device (asset),Equipment status,MX1827 Flush Valve,MX-1827
+CH-DRYER_A,CH-DRYER_A:KS18145A.STAIND,KS-18145A,KS,STAIND,"Status indication (open/closed, run/stop)",Limit switch (asset status),Equipment status,DRUM DR1826 FRONT LUBEN TIMER,DR-1826
+CH-DRYER_A,CH-DRYER_A:KS18145B.STAIND,KS-18145B,KS,STAIND,"Status indication (open/closed, run/stop)",Limit switch (asset status),Equipment status,DRUM DR1826 REAR LUBE TIMER,DR-1826
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:BL1825.STAIND,BL-1825,BL,STAIND,"Status indication (open/closed, run/stop)",Blower (asset),Equipment status,EXHAUST AIR FAN,
+CH-DRA_COMB_AIR,CH-DRA_COMB_AIR:BL1832.STAIND,BL-1832,BL,STAIND,"Status indication (open/closed, run/stop)",Blower (asset),Equipment status,COMBUSTION AIR FAN,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:CV1831.STAIND,CV-1831,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,CYCLONE SCREW CONVEYOR,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:CV1832.STAIND,CV-1832,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,CYCLONE SCREW CONVEYOR,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:RV1831.STAIND,RV-1831,RV,STAIND,"Status indication (open/closed, run/stop)",Rotary valve (asset),Equipment status,CYCLONE SCREW DISCH ROTARY VALVE,
+CH-DRA_CYCLNS,CH-DRA_CYCLNS:RV1832.STAIND,RV-1832,RV,STAIND,"Status indication (open/closed, run/stop)",Rotary valve (asset),Equipment status,CYCLONE SCREW DISCH ROTARY VALVE,
+CH-DRA_PROC_AIR,CH-DRA_PROC_AIR:BL1829.STAIND,BL-1829,BL,STAIND,"Status indication (open/closed, run/stop)",Blower (asset),Equipment status,BL1829 - DRYER A MAIN FAN,BL-1829
+CH-DRYER_A,CH-DRYER_A:CV1826A.STAIND,CV-1826A,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,DOSING BIN SCREW CVYR A,
+CH-DRYER_A,CH-DRYER_A:CV1826B.STAIND,CV-1826B,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,DOSING BIN SCREW CVYR B,
+CH-DRYER_A,CH-DRYER_A:CV1827.STAIND,CV-1827,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,INFEED CONVEYOR,
+CH-DRYER_A,CH-DRYER_A:CV1828.STAIND,CV-1828,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,DRUM DISCHARGE SCREW CVYR,
+CH-DRYER_A,CH-DRYER_A:CV1830.STAIND,CV-1830,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,RECYCLE DRAG CONVEYOR,
+CH-DRYER_A,CH-DRYER_A:CV1833.STAIND,CV-1833,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,RECYCLE SCREW CVYR,
+CH-DRYER_A,CH-DRYER_A:DR1826.STAIND,DR-1826,DR,STAIND,"Status indication (open/closed, run/stop)",Drum/Drive (asset),Equipment status,DRUM DR1826 MASTER  START,DR-1826
+CH-DRYER_A,CH-DRYER_A:MX1827.STAIND,MX-1827,MX,STAIND,"Status indication (open/closed, run/stop)",Mixer (asset),Equipment status,HIGH SPEED MIXER,
+CH-DRYER_A,CH-DRYER_A:P1826.STAIND,P-1826,P,STAIND,"Status indication (open/closed, run/stop)",Pump (asset),Equipment status,PUMP P1836,P-1836
+CH-DRYER_A,CH-DRYER_A:RV1828.STAIND,RV-1828,RV,STAIND,"Status indication (open/closed, run/stop)",Rotary valve (asset),Equipment status,DRUM OUTLET CONVEYOR AIRLOCK,
+CH-DRYER_A,CH-DRYER_A:RV1830.STAIND,RV-1830,RV,STAIND,"Status indication (open/closed, run/stop)",Rotary valve (asset),Equipment status,DUMP PAD ROTARY VALVE,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:CV1834.STAIND,CV-1834,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment Status,DOSING BIN SCREW CVYR A,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:E1834.STAIND,E-1834,E,STAIND,"Status indication (open/closed, run/stop)",Equipment device status,Equipment Status,DOSING BIN SCREW CVYR B,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:HV18219.STAIND,HV-18219,HV,STAIND,"Status indication (open/closed, run/stop)",Hand/hood valve status,Equipment Status,INFEED CONVEYOR,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:IT18211.MEAS,IT-18211,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,DRUM DISCHARGE SCREW CVYR,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:IT18216.MEAS,IT-18216,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,RECYCLE DRAG CONVEYOR,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:IT18222.MEAS,IT-18222,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,RECYCLE SCREW CVYR,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:RV1834.STAIND,RV-1834,RV,STAIND,"Status indication (open/closed, run/stop)",Rotary valve (asset),Equipment Status,DRUM DR1826 MASTER START,DR-1826
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:SI18211.MEAS,SI-18211,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,MX1827 Flush Valve,MX-1827
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:SI18216.MEAS,SI-18216,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,DRUM DR1826 MOTOR A AMPERAGE,DR-1826
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:SSL18216.CIN,SSL-18216,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,DRUM DR1826 MOTOR B AMPERAGE,DR-1826
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:SSL18222.CIN,SSL-18222,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,DRUM DR1826 MOTOR C AMPERAGE,DR-1826
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:SY18211.OUT,SY-18211,SY,OUT,Controller output (CO),Speed output (VFD demand),Output/Demand,DRUM DR1826 MOTOR D AMPERAGE,DR-1826
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:SY18216.OUT,SY-18216,SY,OUT,Controller output (CO),Speed output (VFD demand),Output/Demand,CV1828 CURRENT INDICATION,CV-1828
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:TT18217.MEAS,TT-18217,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,RV1828 AMPERAGE,RV-1828
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:XV18211.STAIND,XV-18211,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status,Status,0,
+CH-DR_PROC_AIR,CH-DR_PROC_AIR:PT33307.MEAS,PT-33307,PT,MEAS,Measured value (PV),Pressure transmitter,Measurement,CV1833 MOTOR CURRENT,CV-1833
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:P1836.STAIND,P-1836,P,STAIND,"Status indication (open/closed, run/stop)",Pump (asset),Status,CV1826A CURRENT INDICATION,CV-1826A
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:P1837.STAIND,P-1837,P,STAIND,"Status indication (open/closed, run/stop)",Pump (asset),Status,CV1826B CURRENT INDICATION,CV-1826B
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:PT35405.MEAS,PT-35405,PT,MEAS,Measured value (PV),Pressure transmitter,Measurement,CV1827 CURRENT INDICATION,CV-1827
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:SI18642.MEAS,SI-18642,SI,MEAS,Measured value (PV),Speed indication,Measurement,MX1827 CURRENT INDICATION,MX-1827
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:SY18642.OUT,SY-18642,SY,OUT,Controller output (CO),Speed output,Demand,RV1830 CURRENT INDICATION,RV-1830
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35450.MEAS,TT-35450,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRUM DR1826 FRONT LUBEN TIMER,DR-1826
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35451.MEAS,TT-35451,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRUM DR1826 REAR LUBE TIMER,DR-1826
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35452.MEAS,TT-35452,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,HIGH SPEED MIXER,
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35453.MEAS,TT-35453,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,PUMP P1836,P-1836
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35454.MEAS,TT-35454,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRYER A DIFF PRESSURE,
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35455.MEAS,TT-35455,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,STEAM PRESSURE,
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35456.MEAS,TT-35456,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,STEAM PRESSURE,
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:XV18137.STAIND,XV-18137,XV,STAIND,"Status indication (open/closed, run/stop)",Valve status,Status,AG1602 AMPS TK1602 SYRUP TANK,
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:XV18194.STAIND,XV-18194,XV,STAIND,"Status indication (open/closed, run/stop)",Valve status,Status,TK1602 SYRUP,
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:XV18224.STAIND,XV-18224,XV,STAIND,"Status indication (open/closed, run/stop)",Valve status,Status,SYRUP PUMP,
+CH-DR_WASTE_WTR,CH-DR_WASTE_WTR:IT41310.MEAS,IT-41310,IT,MEAS,Current transmitter,Measurement,SYRUP PUMP B,,
+CH-DR_WASTE_WTR,CH-DR_WASTE_WTR:LT41310.MEAS,LT-41310,LT,MEAS,Level transmitter,Measurement,SYRUP TANK TK1602 RECIRC,,
+CH-DR_WASTE_WTR,CH-DR_WASTE_WTR:P4130.STAIND,P-4130,P,STAIND,Pump status,Status,SYRUP TANK TK1602 RECIRC,,
+CH-SYRUP,CH-SYRUP:IT16103.PNT,IT-16103,IT,PNT,Point value / indication,Current indication,Indication,TREND FOR TOTAL SYRUP FLOW,
+CH-SYRUP,CH-SYRUP:LT16104.PNT,LT-16104,LT,PNT,Point value / indication,Level indication,Indication,TK1602 RECIRC TEMP,
+CH-SYRUP,CH-SYRUP:P1603A.STAIND,P-1603A,P,STAIND,Pump status,Status,TK1602 RECIRC TEMP INDICATION,,
+CH-SYRUP,CH-SYRUP:P1603B.STAIND,P-1603B,P,STAIND,Pump status,Status,THIN STILLAGE TO SYRUP LOADING,,
+CH-SYRUP,CH-SYRUP:PIC16502.MEAS,PIC-16502,PIC,MEAS,Pressure indicating controller,Measurement,THIN STILLAGE TO SYRUP LOADING,,
+CH-SYRUP,CH-SYRUP:PIC16502.OUT,PIC-16502,PIC,OUT,Pressure indicating controller,Output,SYRUP TO LOADING,,
+CH-SYRUP,CH-SYRUP:PIC16502.SPT,PIC-16502,PIC,SPT,Setpoint (SP),Pressure indicating controller,Setpoint,SYRUP TO LOADING,
+CH-SYRUP,CH-SYRUP:SYRUP_TREND.PNT,SYRUP_TREND,KPI,PNT,Point value,Trend data,Indication,THIN STILL TO LOADOUT 24H ACCUM,
+CH-SYRUPLD_CP40,CH-SYRUPLD_CP40:TT16314.PNT,TT-16314,TT,PNT,Point value (PV),Temperature indication,Indication,SYRUP TO LOADOUT 24H ACCUM,
+CH-SYRUPLD_CP40,CH-SYRUPLD_CP40:TT16515.PNT,TT-16515,TT,PNT,Point value,Temperature indication,Indication,NO DESCRP,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FIC16106.MEAS,FIC-16106,FIC,MEAS,Flow indicating controller,Measurement,NO DESCRP,,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FIC16106.OUT,FIC-16106,FIC,OUT,Flow indicating controller,Output,SYRUP LOADING VALVE,,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FIC16106.SPT,FIC-16106,FIC,SPT,Setpoint (SP),Flow indicating controller,Setpoint,TOTAL DAILY LOADING TIME,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FIC16509.MEAS,FIC-16509,FIC,MEAS,Flow indicating controller,Measurement,TK 1601 Evap Feed % Solids,,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FIC16509.OUT,FIC-16509,FIC,OUT,Flow indicating controller,Output,TK 1602 Syrup Tank % solids,,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FIC16509.SPT,FIC-16509,FIC,SPT,Setpoint (SP),Flow indicating controller,Setpoint,DDGS building hunter Lab L,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FQ16106_24H.OUT,FQ-16106_24H,FQ,OUT,Flow total/quantity,Output,DDGS building % Balling,,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FQ16509_24H.OUT,FQ-16509_24H,FQ,OUT,Flow total/quantity,Output,DDGS building % moisture,,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:LOAD_SEQ.RI0003,LOAD_SEQ.RI0003,RI,BO01,Binary output,Output,Dryer A hunter Lab L,,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:LOAD_SEQ.RI0004,LOAD_SEQ.RI0004,RI,BO01,Binary output,Output,Dryer A % balling,,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:SOV16508.STAIND,SOV-16508,SOV,STAIND,Status indication,Solenoid valve,Status,Dryer A % moisture,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:SOV16508_TIM.OUT,SOV-16508_TIM,SOV,OUT,Controller output,Solenoid valve,Output,Dryer D hunter Lab L,
+CH-ML,CH-ML:TK1601.Percent.Solids,TK-1601,KPI,PNT,Point value,KPI/Calculated,KPI/Calc,Dryer D % balling,
+CH-ML,CH-ML:TK1602.Percent.Solids,TK-1602,KPI,PNT,Point value,KPI/Calculated,KPI/Calc,Dryer D % moisture,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:CV1834.STAIND,CV-1834,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,DOSING BIN SCREW CVYR A,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:E1834.STAIND,E-1834,E,STAIND,"Status indication (open/closed, run/stop)",Equipment (general),Status,DOSING BIN SCREW CVYR B,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:HV18219.STAIND,HV-18219,HV,STAIND,"Status indication (open/closed, run/stop)",Hand/hood valve or device,Status,INFEED CONVEYOR,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:IT18211.MEAS,IT-18211,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,DRUM DISCHARGE SCREW CVYR,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:IT18216.MEAS,IT-18216,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,RECYCLE DRAG CONVEYOR,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:IT18222.MEAS,IT-18222,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,RECYCLE SCREW CVYR,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:RV1834.STAIND,RV-1834,RV,STAIND,"Status indication (open/closed, run/stop)",Rotary valve (asset),Equipment status,DRUM DR1826 MASTER  START,DR-1826
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:SI18211.MEAS,SI-18211,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,SYRUP FLOW,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:SI18216.MEAS,SI-18216,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,SYRUP FLOW,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:SSL18216.CIN,SSL-18216,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,SYRUP FLOW,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:SSL18222.CIN,SSL-18222,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,HOT WATER FLOW,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:SY18211.OUT,SY-18211,SY,OUT,Controller output / demand (CO),Speed output (VFD demand),Output/Demand,HOT WATER FLOW,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:SY18216.OUT,SY-18216,SY,OUT,Controller output / demand (CO),Speed output (VFD demand),Output/Demand,HOT WATER FLOW,
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:TT18217.MEAS,TT-18217,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,MX1827 Flush Valve,MX-1827
+CH-DR_DUSTCOLL,CH-DR_DUSTCOLL:XV18211.STAIND,XV-18211,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Equipment status,DRUM DR1826 MOTOR A AMPERAGE,DR-1826
+CH-DR_PROC_AIR,CH-DR_PROC_AIR:PT33307.MEAS,PT-33307,PT,MEAS,Measured value (PV),Pressure transmitter,Measurement,DRUM DR1826 MOTOR B AMPERAGE,DR-1826
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:P1836.STAIND,P-1836,P,STAIND,"Status indication (open/closed, run/stop)",Pump (asset),Equipment status,DRUM DR1826 MOTOR C AMPERAGE,DR-1826
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:P1837.STAIND,P-1837,P,STAIND,"Status indication (open/closed, run/stop)",Pump (asset),Equipment status,DRUM DR1826 MOTOR D AMPERAGE,DR-1826
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:PT35405.MEAS,PT-35405,PT,MEAS,Measured value (PV),Pressure transmitter,Measurement,CV1828 CURRENT INDICATION,CV-1828
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:SI18642.MEAS,SI-18642,SI,MEAS,Measured value (PV),Speed indication (feedback),Measurement,RV1828 AMPERAGE,RV-1828
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:SY18642.OUT,SY-18642,SY,OUT,Controller output / demand (CO),Speed output (VFD demand),Output/Demand,CV1833 MOTOR CURRENT,CV-1833
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35450.MEAS,TT-35450,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,CV1826A CURRENT INDICATION,CV-1826A
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35451.MEAS,TT-35451,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,CV1826B CURRENT INDICATION,CV-1826B
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35452.MEAS,TT-35452,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,CV1827 CURRENT INDICATION,CV-1827
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35453.MEAS,TT-35453,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,MX1827 CURRENT INDICATION,MX-1827
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35454.MEAS,TT-35454,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,RV1830 CURRENT INDICATION,RV-1830
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35455.MEAS,TT-35455,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRUM DR1826 FRONT LUBEN TIMER,DR-1826
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:TT35456.MEAS,TT-35456,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRUM DR1826 REAR LUBE TIMER,DR-1826
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:XV18137.STAIND,XV-18137,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Equipment status,HIGH SPEED MIXER,
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:XV18194.STAIND,XV-18194,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Equipment status,PUMP P1836,P-1836
+CH-DR_UTIL_WTR,CH-DR_UTIL_WTR:XV18224.STAIND,XV-18224,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Equipment status,DRYER A DIFF PRESSURE,
+CH-DR_WASTE_WTR,CH-DR_WASTE_WTR:IT41310.MEAS,IT-41310,IT,MEAS,Measured value (PV),Current transmitter (motor amps),Measurement,STEAM PRESSURE,
+CH-DR_WASTE_WTR,CH-DR_WASTE_WTR:LT41310.MEAS,LT-41310,LT,MEAS,Measured value (PV),Level transmitter,Measurement,STEAM PRESSURE,
+CH-DR_WASTE_WTR,CH-DR_WASTE_WTR:P4130.STAIND,P-4130,P,STAIND,"Status indication (open/closed, run/stop)",Pump (asset),Equipment status,AG1602 AMPS TK1602 SYRUP TANK,AG-1602
+CH-SYRUP,CH-SYRUP:IT16103.PNT,IT-16103,IT,PNT,Point value / indication,Current indication,Indication,TK1602            SYRUP,TK-1602
+CH-SYRUP,CH-SYRUP:LT16104.PNT,LT-16104,LT,PNT,Point value / indication,Level indication,Indication,SYRUP PUMP,
+CH-SYRUP,CH-SYRUP:P1603A.STAIND,P-1603A,P,STAIND,"Status indication (open/closed, run/stop)",Pump (asset),Equipment status,SYRUP PUMP B,
+CH-SYRUP,CH-SYRUP:P1603B.STAIND,P-1603B,P,STAIND,"Status indication (open/closed, run/stop)",Pump (asset),Equipment status,SYRUP TANK TK1602 RECIRC,TK-1602
+CH-SYRUP,CH-SYRUP:PIC16502.MEAS,PIC-16502,PIC,MEAS,Measured value (PV),Pressure indicating controller,Measurement,SYRUP TANK TK1602 RECIRC,TK-1602
+CH-SYRUP,CH-SYRUP:PIC16502.OUT,PIC-16502,PIC,OUT,Controller output / demand (CO),Pressure indicating controller,Output/Demand,SYRUP TANK TK1602 RECIRC,TK-1602
+CH-SYRUP,CH-SYRUP:PIC16502.SPT,PIC-16502,PIC,SPT,Setpoint (SP),Pressure indicating controller,Setpoint,TREND FOR TOTAL SYRUP FLOW,
+CH-SYRUP,CH-SYRUP:SYRUP_TREND.PNT,SYRUP_TREND,SYRUP_TREND,PNT,Point value / indication,Trend point,Indication,TK1602 RECIRC TEMP,TK-1602
+CH-SYRUPLD_CP40,CH-SYRUPLD_CP40:TT16314.PNT,TT-16314,TT,PNT,Point value / indication,Temperature indication,Indication,TK1602 RECIRC TEMP INDICATION,TK-1602
+CH-SYRUPLD_CP40,CH-SYRUPLD_CP40:TT16515.PNT,TT-16515,TT,PNT,Point value / indication,Temperature indication,Indication,THIN STILLAGE TO  SYRUP LOADING,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FIC16106.MEAS,FIC-16106,FIC,MEAS,Measured value (PV),Flow indicating controller,Measurement,THIN STILLAGE TO  SYRUP LOADING,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FIC16106.OUT,FIC-16106,FIC,OUT,Controller output / demand (CO),Flow indicating controller,Output/Demand,THIN STILLAGE TO  SYRUP LOADING,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FIC16106.SPT,FIC-16106,FIC,SPT,Setpoint (SP),Flow indicating controller,Setpoint,SYRUP TO LOADING,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FIC16509.MEAS,FIC-16509,FIC,MEAS,Measured value (PV),Flow indicating controller,Measurement,SYRUP TO LOADING,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FIC16509.OUT,FIC-16509,FIC,OUT,Controller output / demand (CO),Flow indicating controller,Output/Demand,SYRUP TO LOADING,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FIC16509.SPT,FIC-16509,FIC,SPT,Setpoint (SP),Flow indicating controller,Setpoint,THIN STILL TO LOADOUT 24H ACCUM,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FQ16106_24H.OUT,FQ-16106_24H,FQ,OUT,Controller output / demand (CO),Flow total/quantity (calculated),Output/Demand,SYRUP TO LOADOUT 24H ACCUM,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:FQ16509_24H.OUT,FQ-16509_24H,FQ,OUT,Controller output / demand (CO),Flow total/quantity (calculated),Output/Demand,NO DESCRP,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:LOAD_SEQ.RI0003,LOAD_SEQ,LOAD,RI0003,,,,,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:LOAD_SEQ.RI0004,LOAD_SEQ,LOAD,RI0004,,,,,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:SOV16508.STAIND,SOV-16508,SOV,STAIND,"Status indication (open/closed, run/stop)",Solenoid valve,Equipment status,SYRUP LOADING VALVE,
+CH-SYRUP_LOAD,CH-SYRUP_LOAD:SOV16508_TIM.OUT,SOV-16508_TIM,SOV,OUT,Controller output / demand (CO),Solenoid valve,Output/Demand,TOTAL DAILY LOADING TIME,
+CH-ML,CH-ML:TK1601.Percent.Solids,TK-1601,KPI,,,KPI/Calculated,KPI/Calc,TK 1601 Evap Feed % Solids,TK-1601
+CH-ML,CH-ML:TK1602.Percent.Solids,TK-1602,KPI,,,KPI/Calculated,KPI/Calc,TK 1602 Syrup Tank % solids,TK-1602
+CH-ML,CH-ML:DDGSbuilding.Hunter.Lab.L,DDGSbuilding,KPI,,,KPI/Calculated,KPI/Calc,DDGS building hunter Lab L,
+CH-ML,CH-ML:DDGSbuilding.Percent.Balling,DDGSbuilding,KPI,,,KPI/Calculated,KPI/Calc,DDGS building % Balling,
+CH-ML,CH-ML:DDGSbuilding.Percent.Moisture,DDGSbuilding,KPI,,,KPI/Calculated,KPI/Calc,DDGS building % moisture,
+CH-ML,CH-ML:DryerA.Hunter.Lab.L,DryerA,KPI,,,KPI/Calculated,KPI/Calc,Dryer A hunter Lab L,
+CH-ML,CH-ML:DryerA.Percent.Balling,DryerA,KPI,,,KPI/Calculated,KPI/Calc,Dryer A % balling,
+CH-ML,CH-ML:DryerA.Percent.Moisture,DryerA,KPI,,,KPI/Calculated,KPI/Calc,Dryer A % moisture,
+CH-ML,CH-ML:DryerD.Hunter.Lab.L,DryerD,KPI,,,KPI/Calculated,KPI/Calc,Dryer D hunter Lab L,
+CH-ML,CH-ML:DryerD.Percent.Balling,DryerD,KPI,,,KPI/Calculated,KPI/Calc,Dryer D % balling,
+CH-ML,CH-ML:DryerD.Percent.Moisture,DryerD,KPI,,,KPI/Calculated,KPI/Calc,Dryer D % moisture,
+CH-DRYER_D,CH-DRYER_D:CV1801D.STAIND,CV-1801D,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,DOSING BIN SCREW CVYR A,
+CH-DRYER_D,CH-DRYER_D:CV1802D.STAIND,CV-1802D,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,DOSING BIN SCREW CVYR B,
+CH-DRYER_D,CH-DRYER_D:CV1803D.STAIND,CV-1803D,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,INFEED CONVEYOR,
+CH-DRYER_D,CH-DRYER_D:CV1804D.STAIND,CV-1804D,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,DRUM DISCHARGE SCREW CVYR,
+CH-DRYER_D,CH-DRYER_D:DR1801D.STAIND,DR-1801D,DR,STAIND,"Status indication (open/closed, run/stop)",Drum/Drive (asset),Equipment status,RECYCLE DRAG CONVEYOR,
+CH-DRYER_D,CH-DRYER_D:FIC84401.MEAS,FIC-84401,FIC,MEAS,Measured value (PV),Flow indicating controller,Measurement,RECYCLE SCREW CVYR,
+CH-DRYER_D,CH-DRYER_D:FIC84401.OUT,FIC-84401,FIC,OUT,Controller output / demand (CO),Flow indicating controller,Output/Demand,DRUM DR1826 MASTER  START,DR-1826
+CH-DRYER_D,CH-DRYER_D:FIC84401.SPT,FIC-84401,FIC,SPT,Setpoint (SP),Flow indicating controller,Setpoint,SYRUP FLOW,
+CH-DRYER_D,CH-DRYER_D:FY84401.OUT,FY-84401,FY,OUT,Controller output / demand (CO),Flow final element demand,Output/Demand,SYRUP FLOW,
+CH-DRYER_D,CH-DRYER_D:IT84104.PNT,IT-84104,IT,PNT,Point value / indication,Current transmitter (motor amps),Measurement,SYRUP FLOW,
+CH-DRYER_D,CH-DRYER_D:IT84109.PNT,IT-84109,IT,PNT,Point value / indication,Current transmitter (motor amps),Measurement,SYRUP FLOW,
+CH-DRYER_D,CH-DRYER_D:IT84119.PNT,IT-84119,IT,PNT,Point value / indication,Current transmitter (motor amps),Measurement,SYRUP FLOW,
+CH-DRYER_D,CH-DRYER_D:IT84202.PNT,IT-84202,IT,PNT,Point value / indication,Current transmitter (motor amps),Measurement,HOT WATER FLOW,
+CH-DRYER_D,CH-DRYER_D:IT84203.PNT,IT-84203,IT,PNT,Point value / indication,Current transmitter (motor amps),Measurement,HOT WATER FLOW,
+CH-DRYER_D,CH-DRYER_D:LIC84401.MEAS,LIC-84401,LIC,MEAS,Measured value (PV),Level indicating controller,Measurement,MX1827 Flush Valve,MX-1827
+CH-DRYER_D,CH-DRYER_D:LIC84401.OUT,LIC-84401,LIC,OUT,Controller output / demand (CO),Level indicating controller,Output/Demand,DRUM DR1826 MOTOR A AMPERAGE,DR-1826
+CH-DRYER_D,CH-DRYER_D:LIC84401.SPT,LIC-84401,LIC,SPT,Setpoint (SP),Level indicating controller,Setpoint,DRUM DR1826 MOTOR B AMPERAGE,DR-1826
+CH-DRYER_D,CH-DRYER_D:LY84401.OUT,LY-84401,LY,OUT,Controller output / demand (CO),Level final element demand,Output/Demand,DRUM DR1826 MOTOR C AMPERAGE,DR-1826
+CH-DRYER_D,CH-DRYER_D:MX1801D.STAIND,MX-1801D,MX,STAIND,"Status indication (open/closed, run/stop)",Mixer (asset),Equipment status,DRUM DR1826 MOTOR D AMPERAGE,DR-1826
+CH-DRYER_D,CH-DRYER_D:P1803D.STAIND,P-1803D,P,STAIND,"Status indication (open/closed, run/stop)",Pump (asset),Equipment status,CV1828 CURRENT INDICATION,CV-1828
+CH-DRYER_D,CH-DRYER_D:PDI84403.PNT,PDI-84403,PDI,PNT,Point value / indication,Differential pressure indication,Measurement,RV1828 AMPERAGE,RV-1828
+CH-DRYER_D,CH-DRYER_D:PDY84403.RO01,PDY-84403,PDY,RO01,Binary/relay output channel,Differential pressure relay output,Output,CV1833 MOTOR CURRENT,CV-1833
+CH-DRYER_D,CH-DRYER_D:PIC84401.MEAS,PIC-84401,PIC,MEAS,Measured value (PV),Pressure indicating controller,Measurement,CV1826A CURRENT INDICATION,CV-1826A
+CH-DRYER_D,CH-DRYER_D:PIC84401.OUT,PIC-84401,PIC,OUT,Controller output / demand (CO),Pressure indicating controller,Output,D/CV1826B CURRENT INDICATION,CV-1826B
+CH-DRYER_D,CH-DRYER_D:PIC84401.SPT,PIC-84401,PIC,SPT,Setpoint (SP),Pressure indicating controller,Setpoint,CV1827 CURRENT INDICATION,CV-1827
+CH-DRYER_D,CH-DRYER_D:PT84301.PNT,PT-84301,PT,PNT,Point value / indication,Pressure transmitter,Measurement,MX1827 CURRENT INDICATION,MX-1827
+CH-DRYER_D,CH-DRYER_D:PT84401.PNT,PT-84401,PT,PNT,Point value / indication,Pressure transmitter,Measurement,RV1830 CURRENT INDICATION,RV-1830
+CH-DRYER_D,CH-DRYER_D:PT84402.PNT,PT-84402,PT,PNT,Point value / indication,Pressure transmitter,Measurement,DRUM DR1826 FRONT LUBEN TIMER,DR-1826
+CH-DRYER_D,CH-DRYER_D:SG8403A.STAIND,SG-8403A,SG,STAIND,"Status indication (open/closed, run/stop)",Speed/limit switch,Equipment status,DRUM DR1826 REAR LUBE TIMER,DR-1826
+CH-DRYER_D,CH-DRYER_D:SG8403C.STAIND,SG-8403C,SG,STAIND,"Status indication (open/closed, run/stop)",Speed/limit switch,Equipment status,HIGH SPEED MIXER,
+CH-DRYER_D,CH-DRYER_D:SG8403_DWN.RO01,SG-8403_DWN,SG,RO01,Binary/relay output channel,Speed/limit switch,Output,PUMP P1836,P-1836
+CH-DRYER_D,CH-DRYER_D:SIK84111.OUT,SIK-84111,SIK,OUT,Controller output (CO),Speed controller,Output,DRYER A DIFF PRESSURE,
+CH-DRYER_D,CH-DRYER_D:SSL84203.CIN,SSL-84203,SSL,CIN,Contact input (discrete),Speed switch (motion proof),Discrete Input,STEAM PRESSURE,
+CH-DRYER_D,CH-DRYER_D:TT84209.PNT,TT-84209,TT,PNT,Point value / indication,Temperature transmitter,Measurement,STEAM PRESSURE,
+CH-DRYER_D,CH-DRYER_D:UT84130A.PNT,UT-84130A,UT,PNT,Point value / indication,Utility/auxiliary transmitter,Measurement,STEAM PRESSURE,
+CH-DRYER_D_BLR,CH-DRYER_D_BLR:BL1803D.STAIND,BL-1803D,BL,STAIND,"Status indication (open/closed, run/stop)",Blower (asset),Equipment status,HOT WATER PRESSURE,
+CH-DRYER_D_BLR,CH-DRYER_D_BLR:BL1804D.STAIND,BL-1804D,BL,STAIND,"Status indication (open/closed, run/stop)",Blower (asset),Equipment status,CYCLONE INLET PRESSURE,
+CH-DRYER_D_BLR,CH-DRYER_D_BLR:IT84307.PNT,IT-84307,IT,PNT,Point value / indication,Current transmitter,Measurement,150# STEAM SUPPLY PRESSURE,
+CH-DRYER_D_BLR,CH-DRYER_D_BLR:IT84401.PNT,IT-84401,IT,PNT,Point value / indication,Current transmitter,Measurement,DRUM OUTLET CONVEYOR AIRLOCK,
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:BL1801D.STAIND,BL-1801D,BL,STAIND,"Status indication (open/closed, run/stop)",Blower (asset),Equipment status,DUMP PAD ROTARY VALVE,
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:FQ84203_24H-DELTA.OUT,FQ-84203_24H-DELTA,FQ,OUT,Flow total/delta,Output,TRUNNION A SPEED FEEDBACK,,
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:FQ84203_24H.OUT,FQ-84203_24H,FQ,OUT,Flow total,Output,TRUNNION B SPEED FEEDBACK,,
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:FT84203.PNT,FT-84203,FT,PNT,Point value / indication,Flow transmitter,Measurement,TRUNNION C SPEED FEEDBACK,
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:IT84201.MEAS,IT-84201,IT,MEAS,Measured value (PV),Current transmitter,Measurement,TRUNNION D SPEED FEEDBACK,
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:IT84201.PNT,IT-84201,IT,PNT,Point value / indication,Current transmitter,Indication,CV1833 SPEED INDICATION,CV-1833
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:TIC84302.MEAS,TIC-84302,TIC,MEAS,Measured value (PV),Temperature indicating controller,Measurement,CV1826B SPEED INDICATION,CV-1826B
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:TIC84302.OUT,TIC-84302,TIC,OUT,Controller output (CO),Temperature indicating controller,Output,CV1826B SPEED  INDICATION,CV-1826B
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:TIC84302.SPT,TIC-84302,TIC,SPT,Setpoint (SP),Temperature indicating controller,Setpoint,DRUM DR1826 SPEED CONTROL,DR-1826
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:TT84201.PNT,TT-84201,TT,PNT,Point value / indication,Temperature transmitter,Measurement,DRUM DR1826 SPEED CONTROL,DR-1826
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:TT84203.PNT,TT-84203,TT,PNT,Point value / indication,Temperature transmitter,Measurement,DRUM DR1826 SPEED CONTROL,DR-1826
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:TT84205.PNT,TT-84205,TT,PNT,Point value / indication,Temperature transmitter,Measurement,DRUM DR1826 SPEED SWITCH,DR-1826
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:TT84207.PNT,TT-84207,TT,PNT,Point value / indication,Temperature transmitter,Measurement,CV1828 SPEED SWITCH,CV-1828
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:TY84302.OUT,TY-84302,TY,OUT,Controller output (CO),Temperature final element output,Output,RV1828 SPEED SWITCH,RV-1828
+CH-DRYER_D_BMS,CH-DRYER_D_BMS:TZT84302.PNT,TZT-84302,TZT,PNT,Point value / indication,Valve/actuator position feedback,Measurement,RECYCLE DRAG CONVEYOR SPEED SW,
+CH-DRYER_D_CY2,CH-DRYER_D_CY2:TT84311.PNT,TT-84311,TT,PNT,Point value / indication,Temperature transmitter,Measurement,CV1833 SPEED SWITCH,CV-1833
+CH-DRYER_D_CY2,CH-DRYER_D_CY2:TT84312.PNT,TT-84312,TT,PNT,Point value / indication,Temperature transmitter,Measurement,CV1826A SPEED SWITCH,CV-1826A
+CH-DRYER_D_CY2,CH-DRYER_D_CY2:TT84313.PNT,TT-84313,TT,PNT,Point value / indication,Temperature transmitter,Measurement,CV1826B SPEED SWITCH,CV-1826B
+CH-DRYER_D_CY2,CH-DRYER_D_CY2:TT84314.PNT,TT-84314,TT,PNT,Point value / indication,Temperature transmitter,Measurement,CV1827 SPEED SWITCH,CV-1827
+CH-DRYER_D_CY2,CH-DRYER_D_CY2:TT84315.PNT,TT-84315,TT,PNT,Point value / indication,Temperature transmitter,Measurement,MX1827 SPEED SWITCH,MX-1827
+CH-DRYER_D_CY2,CH-DRYER_D_CY2:TT84316.PNT,TT-84316,TT,PNT,Point value / indication,Temperature transmitter,Measurement,RV1830 SPEED SWITCH,RV-1830
+CH-DRYER_D_CY2,CH-DRYER_D_CY2:TT84317.PNT,TT-84317,TT,PNT,Point value / indication,Temperature transmitter,Measurement,DRUM DR1826 MOTOR 1 CONTROL,DR-1826
+CH-DRYER_D_CY2,CH-DRYER_D_CY2:TT84318.PNT,TT-84318,TT,PNT,Point value / indication,Temperature transmitter,Measurement,DR1826 MASTR 2 MOTR SPD CTRL,DR-1826
+CH-DRYER_D_CY2,CH-DRYER_D_CY2:TT84319.MEAS,TT-84319,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,CV1833 SPEED CONTROL,CV-1833
+CH-DRYER_D_CY2,CH-DRYER_D_CY2:TT84320.MEAS,TT-84320,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,CV1826A SPEEDOUTPUT,CV-1826A
+CH-DRYER_D_CY2,CH-DRYER_D_CY2:TT84321.MEAS,TT-84321,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,CV1826B SPEEDOUTPUT,CV-1826B
+CH-DRYER_D_CY2,CH-DRYER_D_CY2:TT84322.MEAS,TT-84322,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,DRYER EXH TEMP DOSING BIN,
+CH-DRYER_D_CY,CH-DRYER_D_CY:CV1812D.STAIND,CV-1812D,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,DRYER EXH TEMP DOSING BIN,
+CH-DRYER_D_CY,CH-DRYER_D_CY:CV1813D.STAIND,CV-1813D,CV,STAIND,"Status indication (open/closed, run/stop)",Conveyor (asset),Equipment status,DRYER EXH TEMP DOSING BIN,
+CH-DRYER_D_CY,CH-DRYER_D_CY:HIC84308.OUT,HIC-84308,HIC,OUT,Controller output (CO),Level/weight indicating controller,Output,DRYER EXH TEMP DOSING BIN,
+CH-DRYER_D_CY,CH-DRYER_D_CY:PDI84209.MEAS,PDI-84209,PDI,MEAS,Measured value (PV),Differential pressure indication,Measurement,DRYER EXH TEMP DOSING BIN,
+CH-DRYER_D_CY,CH-DRYER_D_CY:PDIC84202.MEAS,PDIC-84202,PDIC,MEAS,Measured value (PV),Differential pressure controller,Measurement,DRYER EXH TEMP DOSING BIN,
+CH-DRYER_D_CY,CH-DRYER_D_CY:PDIC84202.OUT,PDIC-84202,PDIC,OUT,Controller output (CO),Differential pressure controller,Output,M1837 TEMPERATURE,M-1837
+CH-DRYER_D_CY,CH-DRYER_D_CY:PDIC84202.SPT,PDIC-84202,PDIC,SPT,Setpoint (SP),Differential pressure controller,Setpoint,M1837 TEMPERATURE,M-1837
+CH-DRYER_D_CY,CH-DRYER_D_CY:PDY84202.OUT,PDY-84202,PDY,OUT,Controller output (CO),Differential pressure relay,Output,M1837 TEMPERATURE,M-1837
+CH-DRYER_D_CY,CH-DRYER_D_CY:PT84302.PNT,PT-84302,PT,PNT,Point value / indication,Pressure transmitter,Measurement,150# STEAM SUPPLY PRESSURE,
+CH-DRYER_D_CY,CH-DRYER_D_CY:RV1812D.STAIND,RV-1812D,RV,STAIND,"Status indication (open/closed, run/stop)",Rotary valve,Equipment status,DRYER EXH TEMP HIGH SELECT,
+CH-DRYER_D_CY,CH-DRYER_D_CY:ZT84202.PNT,ZT-84202,ZT,PNT,Point value / indication,Valve/actuator position feedback,Measurement,DOSING BIN WEIGHT,
+CH-DRYER_D_CY,CH-DRYER_D_CY:ZT84308.PNT,ZT-84308,ZT,PNT,Point value / indication,Valve/actuator position feedback,Measurement,DOSING BIN WEIGHT,
+CH-DRYER_D_CY,CH-DRYER_D_CY:ZTA84202.PNT,ZTA-84202,ZTA,PNT,Point value / indication,Valve/actuator position feedback,Measurement,DOSING BIN WEIGHT,
+CH-DRYER_D_CY,CH-DRYER_D_CY:ZTA84308.PNT,ZTA-84308,ZTA,PNT,Point value / indication,Valve/actuator position feedback,Measurement,DRUM DR1826 ACCESS DOOR,DR-1826
+CH-DRYER_D_SCBR,CH-DRYER_D_SCBR:P1804.STAIND,P-1804,P,STAIND,"Status indication (open/closed, run/stop)",Pump (asset),Equipment status,Pump Permissive P1836,P-1836
+CH-Dryer_D_UptimeHours,CH-Dryer_D_UptimeHours,CH-Dryer_D_UptimeHours,KPI,,,KPI/Calculated,KPI/Calc,DISCHARGE ELBOW DOOR,
+CH-Dryer_D_UptimePercent,CH-Dryer_D_UptimePercent,CH-Dryer_D_UptimePercent,KPI,,,KPI/Calculated,KPI/Calc,SYRUP VALVE FEEDBACK,
+CH-DR_DECANT701,CH-DR_DECANT701:FIC17701.MEAS,FIC-17701,FIC,MEAS,Measured value (PV),Flow indicating controller,Measurement,DOSING BIN SCREW CVYR A,
+CH-DR_DECANT701,CH-DR_DECANT701:FIC17701.OUT,FIC-17701,FIC,OUT,Controller output / demand (CO),Flow indicating controller,Output/Demand,DOSING BIN SCREW CVYR B,
+CH-DR_DECANT701,CH-DR_DECANT701:FIC17701.SPT,FIC-17701,FIC,SPT,Setpoint (SP),Flow indicating controller,Setpoint,INFEED CONVEYOR,
+CH-DR_DECANT701,CH-DR_DECANT701:HV17736.STAIND,HV-17736,HV,STAIND,"Status indication (open/closed, run/stop)",Hand/hood valve or device (asset),Status,DRUM DISCHARGE SCREW CVYR,
+CH-DR_DECANT701,CH-DR_DECANT701:JT17703A.MEAS,JT-17703A,JT,MEAS,Measured value (PV),"Auxiliary transmitter (e.g., torque/speed)",Measurement,RECYCLE DRAG CONVEYOR,
+CH-DR_DECANT701,CH-DR_DECANT701:SDI17703.MEAS,SDI-17703,SDI,MEAS,Measured value (PV),Solids/density indication (calculated),Measurement,RECYCLE SCREW CVYR,
+CH-DR_DECANT701,CH-DR_DECANT701:ST17703A.MEAS,ST-17703A,ST,MEAS,Measured value (PV),Speed/torque transmitter,Measurement,DRUM DR1826 MASTER  START,DR-1826
+CH-DR_DECANT701,CH-DR_DECANT701:ST17703B.RO01,ST-17703B,ST,RO01,Binary/relay output channel,Speed/torque transmitter,Binary Output,SYRUP FLOW,
+CH-DR_DECANT701,CH-DR_DECANT701:TT17703A.MEAS,TT-17703A,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,SYRUP FLOW,
+CH-DR_DECANT701,CH-DR_DECANT701:TT17703B.MEAS,TT-17703B,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,SYRUP FLOW,
+CH-DR_DECANT701,CH-DR_DECANT701:VT17703.MEAS,VT-17703,VT,MEAS,Measured value (PV),Vibration transmitter,Measurement,HOT WATER FLOW,
+CH-DR_DECANT701,CH-DR_DECANT701:WT17703B.MEAS,WT-17703B,WT,MEAS,Measured value (PV),Weight transmitter,Measurement,HOT WATER FLOW,
+CH-DR_DECANT701,CH-DR_DECANT701:XS17703.CIN,XS-17703,XS,CIN,Contact input (discrete),Limit/proximity switch (status),Discrete Input,HOT WATER FLOW,
+CH-DR_DECANT701,CH-DR_DECANT701:XS17703A.CIN,XS-17703A,XS,CIN,Contact input (discrete),Limit/proximity switch (status),Discrete Input,MX1827 Flush Valve,MX-1827
+CH-DR_DECANT701,CH-DR_DECANT701:XS17703B.CIN,XS-17703B,XS,CIN,Contact input (discrete),Limit/proximity switch (status),Discrete Input,DRUM DR1826 MOTOR A AMPERAGE,DR-1826
+CH-DR_DECANT701,CH-DR_DECANT701:XS17703C.CIN,XS-17703C,XS,CIN,Contact input (discrete),Limit/proximity switch (status),Discrete Input,DRUM DR1826 MOTOR B AMPERAGE,DR-1826
+CH-DR_DECANT701,CH-DR_DECANT701:XV17702.STAIND,XV-17702,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,DRUM DR1826 MOTOR C AMPERAGE,DR-1826
+CH-DR_DECANT701,CH-DR_DECANT701:XV17732.STAIND,XV-17732,XV,STAIND,"Status indication (open/closed, run/stop)",Valve/damper/door status (discrete),Status,DRUM DR1826 MOTOR D AMPERAGE,DR-1826
+CH-DR_DECANT701,CH-DR_DECANT701:XZSC17703A.CIN,XZSC-17703A,XZSC,CIN,Contact input (discrete),Sequence status (combined),Discrete Input,CV1828 CURRENT INDICATION,CV-1828
+CH-DR_DECANT701,CH-DR_DECANT701:ZT17701.MEAS,ZT-17701,ZT,MEAS,Measured value (PV),Valve/actuator position feedback,Measurement,RV1828 AMPERAGE,RV-1828
+CH-DR_DECANT702,CH-DR_DECANT702:FIC17704.MEAS,FIC-17704,FIC,MEAS,Measured value (PV),Flow indicating controller,Measurement,0,
+CH-DR_DECANT702,CH-DR_DECANT702:FIC17704.OUT,FIC-17704,FIC,OUT,Controller output / demand (CO),Flow indicating controller,Output/Demand,CV1833 MOTOR CURRENT,CV-1833
+CH-DR_DECANT702,CH-DR_DECANT702:FIC17704.SPT,FIC-17704,FIC,SPT,Setpoint (SP),Flow indicating controller,Setpoint,CV1826A CURRENT INDICATION,CV-1826A
+CH-DR_DECANT702,CH-DR_DECANT702:FY17704.OUT,FY-17704,FY,OUT,Controller output / demand (CO),Flow final element demand,Output/Demand,CV1826B CURRENT INDICATION,CV-1826B
+CH-DR_DECANT702,CH-DR_DECANT702:HV17744.STAIND,HV-17744,HV,STAIND,"Status indication (open/closed, run/stop)",Hand/hood valve or device (asset),Status,CV1827 CURRENT INDICATION,CV-1827
+CH-DR_DECANT702,CH-DR_DECANT702:JT17706A.MEAS,JT-17706A,JT,MEAS,Measured value (PV),"Auxiliary transmitter (e.g., torque/speed)",Measurement,MX1827 CURRENT INDICATION,MX-1827
+CH-DR_DECANT702,CH-DR_DECANT702:SDI17706.MEAS,SDI-17706,SDI,MEAS,Measured value (PV),Solids/density indication (calculated),Measurement,RV1830 CURRENT INDICATION,RV-1830
+CH-DR_DECANT702,CH-DR_DECANT702:ST17706A.MEAS,ST-17706A,ST,MEAS,Measured value (PV),Speed/torque transmitter,Measurement,DRUM DR1826 FRONT LUBEN TIMER,DR-1826
+CH-DR_DECANT702,CH-DR_DECANT702:ST17706B.RO01,ST-17706B,ST,RO01,Binary/relay output channel,Speed/torque transmitter,Binary Output,DRUM DR1826 REAR LUBE TIMER,DR-1826
+CH-DR_DECANT702,CH-DR_DECANT702:TT17706A.MEAS,TT-17706A,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,HIGH SPEED MIXER,
+CH-DR_DECANT702,CH-DR_DECANT702:TT17706B.MEAS,TT-17706B,TT,MEAS,Measured value (PV),Temperature transmitter,Measurement,PUMP P1836,P-1836
+CH-DR_DECANT702,CH-DR_DECANT702:VT17706.MEAS,VT-17706,VT,MEAS,Measured value,,,,

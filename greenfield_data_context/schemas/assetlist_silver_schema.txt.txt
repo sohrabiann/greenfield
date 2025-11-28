@@ -1,0 +1,1 @@
+struct<Asset:int,Description:string,Location:string,IsProblematic:string,Preventative_Maintenance:string,Plant_Area:string,Parent:string,YTD_Direct_Costs:string,YTD_Rolled_Costs:string,Life_Direct_Costs:string,UniqueLocation:string,Life_Rolled_Costs:string>

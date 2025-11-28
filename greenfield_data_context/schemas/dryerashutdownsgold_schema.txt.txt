@@ -1,0 +1,1 @@
+struct<Shutdown_Number:bigint,Shutdown_Start:timestamp,Recovery_Timestamp:timestamp,Shutdown_Length_Hours:double,Shutdown_Length_Days:double,Uptime_Hours_Lost:double,Before_Shutdown_Value:double,Start_Value:double,End_Value:double,Recovery_Value:double,Number_Of_Readings:bigint>
