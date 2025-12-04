@@ -1,0 +1,360 @@
+{
+  "assets": {
+    "problem_asset_count": 14,
+    "area_counts": [
+      [
+        "DRYER A",
+        234
+      ],
+      [
+        "DDG",
+        28
+      ],
+      [
+        "DRYER D",
+        20
+      ],
+      [
+        "TGF",
+        11
+      ],
+      [
+        "",
+        2
+      ],
+      [
+        "BE-1805",
+        1
+      ],
+      [
+        " SIZE 454",
+        1
+      ],
+      [
+        "70 RPM\\\",CV-1801D,No,,DRYER D,,1405.42,$1",
+        1
+      ],
+      [
+        "40.4 RPM\\\",CV-1802D,No,,DRYER D,,1505.51,$1",
+        1
+      ],
+      [
+        "99 FPM\\\",CV-1803D,No,,DRYER D,,51,$51.00,83608.04\n1420,\\\"MARTIN",
+        1
+      ],
+      [
+        "xx\\\",CV-1812D,No,,DRYER D,,13539.5,$13",
+        1
+      ],
+      [
+        "xx\\\",CV-1813D,No,,DRYER D,,4407.36,$4",
+        1
+      ],
+      [
+        "xx\\\",CV-1826A,No,,DRYER A,,0,$0.00,0\n2507,SEW PARALLEL SHAFT HELICAL GEAR UNIT FHZ127 R77 AM213/215,CV-1826A,No,,DRYER A,,0,$0.00,7949.67,0,$7",
+        1
+      ],
+      [
+        "xx\\\",CV-1826B,No,,DRYER A,,0,$0.00,0\n2508,SEW PARALLEL SHAFT HELICAL GEAR UNIT FHZ127 R77 AM213/215,CV-1826B,No,,DRYER A,,0,$0.00,0,0,$0.00\n2488,5 HP / 1800 RPM / TEFC / 575V/3PH/60HZ / FRAME#184T,CV-1827,No,,DRYER A,,0,$0.00,0,1,$0.00\n2509,DORRIS 115TR25 SHAFT MOUNTED SPEED REDUCER,CV-1827,No,,DRYER A,,0,$0.00,0,0,$0.00\n2522,\\\"CONTINENTAL ",
+        1
+      ],
+      [
+        "No",
+        1
+      ],
+      [
+        "FV-18110",
+        1
+      ],
+      [
+        "2-1/2\\\\\" DIAL\"",
+        1
+      ],
+      [
+        "0-15PSIG",
+        1
+      ],
+      [
+        "18.2USGPM\\\",PSV-18621,No,,DRYER A,,0,$0.00,1622.52\n3635,PRESSURE TRANSMITTER,PT-18125,No,,DRYER A,,0,$0.00,67.5,1,$67.50\n3828,PRESSURE TRANSMITTER,PT-18125,No,,DRYER A,,0,$0.00,135,0,$135.00\n3636,PRESSURE TRANSMITTER,PT-18133,No,,DRYER A,,0,$0.00,101.25,1,$101.25\n3637,PRESSURE TRANSMITTER,PT-18140,Yes,,DRYER A,,0,$0.00,0,1,$0.00\n3638,PRESSURE TRANSMITTER,PT-18160,No,,DRYER A,,0,$0.00,0,1,$0.00\n3639,PRESSURE TRANSMITTER,PT-18164,No,,DRYER A,,0,$0.00,45,1,$45.00\n3642,PRESSURE TRANSMITTER,PT-18165A,No,,DRYER A,,0,$0.00,0,1,$0.00\n3643,PRESSURE TRANSMITTER,PT-18165B,No,,DRYER A,,0,$0.00,0,1,$0.00\n3644,PRESSURE TRANSMITTER,PT-18215A,Yes,,DRYER A,,0,$0.00,0,1,$0.00\n3645,PRESSURE TRANSMITTER,PT-18215B,No,,DRYER A,,0,$0.00,0,1,$0.00\n3646,PRESSURE TRANSMITTER,PT-18603,No,,DRYER A,,0,$0.00,22.5,1,$22.50\n4611,CY-1823 (AIR INTAKE PRESSURE TRANSMITTER),PT-18810,No,,DDG,,0,$0.00,67.5,1,$67.50\n6843,CONTROL VALVE",
+        1
+      ],
+      [
+        " 24\\\"\\\" DIA\\\"\"",
+        1
+      ],
+      [
+        " 30\\\"\\\" DIA.\\\"\"",
+        1
+      ],
+      [
+        " 42\\\"\\\" DIA.\\\"\"",
+        1
+      ],
+      [
+        " 48\\\"\\\" DIA.\\\"\"",
+        1
+      ]
+    ],
+    "sample_problem_assets": [
+      {
+        "Asset": "10034",
+        "Description": "BLOWER, HOWDEN, FAN MODEL E40S-8700 SWSI CCW TAU Arrg't7",
+        "Location": "BL-1829",
+        "IsProblematic": "Yes",
+        "Preventative_Maintenance": "",
+        "Plant_Area": "DRYER A",
+        "Parent": "",
+        "YTD_Direct_Costs": "0",
+        "YTD_Rolled_Costs": "$0.00",
+        "Life_Direct_Costs": "10266.51",
+        "UniqueLocation": "1",
+        "Life_Rolled_Costs": "$10,784.01"
+      },
+      {
+        "Asset": "2868",
+        "Description": "600HP / 1200RPM / TEFC / 575V/3PH/60HZ / 5810B FRAME",
+        "Location": "BL-1829",
+        "IsProblematic": "Yes",
+        "Preventative_Maintenance": "",
+        "Plant_Area": "DRYER A",
+        "Parent": "10034",
+        "YTD_Direct_Costs": "0",
+        "YTD_Rolled_Costs": "$0.00",
+        "Life_Direct_Costs": "517.5",
+        "UniqueLocation": "0",
+        "Life_Rolled_Costs": "$517.50"
+      },
+      {
+        "Asset": "2538",
+        "Description": "FIKE FLAMELESS VENT - E34-004-3636",
+        "Location": "DC-1834",
+        "IsProblematic": "Yes",
+        "Preventative_Maintenance": "",
+        "Plant_Area": "DRYER A",
+        "Parent": "6996",
+        "YTD_Direct_Costs": "0",
+        "YTD_Rolled_Costs": "$0.00",
+        "Life_Direct_Costs": "0",
+        "UniqueLocation": "1",
+        "Life_Rolled_Costs": "$0.00"
+      },
+      {
+        "Asset": "2539",
+        "Description": "FIKE FLAMELESS VENT - E34-004-3636",
+        "Location": "DC-1834",
+        "IsProblematic": "Yes",
+        "Preventative_Maintenance": "",
+        "Plant_Area": "DRYER A",
+        "Parent": "6996",
+        "YTD_Direct_Costs": "0",
+        "YTD_Rolled_Costs": "$0.00",
+        "Life_Direct_Costs": "0",
+        "UniqueLocation": "0",
+        "Life_Rolled_Costs": "$0.00"
+      },
+      {
+        "Asset": "6996",
+        "Description": "DUST COLLECTOR, IMF, MODEL XXX",
+        "Location": "DC-1834",
+        "IsProblematic": "Yes",
+        "Preventative_Maintenance": "",
+        "Plant_Area": "DRYER A",
+        "Parent": "",
+        "YTD_Direct_Costs": "0",
+        "YTD_Rolled_Costs": "$0.00",
+        "Life_Direct_Costs": "0",
+        "UniqueLocation": "0",
+        "Life_Rolled_Costs": "$0.00"
+      },
+      {
+        "Asset": "2561",
+        "Description": "DRYER A - DDG PRODUCT COOLER",
+        "Location": "E-1834",
+        "IsProblematic": "Yes",
+        "Preventative_Maintenance": "",
+        "Plant_Area": "DRYER A",
+        "Parent": "",
+        "YTD_Direct_Costs": "0",
+        "YTD_Rolled_Costs": "$0.00",
+        "Life_Direct_Costs": "900",
+        "UniqueLocation": "1",
+        "Life_Rolled_Costs": "$900.00"
+      },
+      {
+        "Asset": "2563",
+        "Description": "EJECTOR, PICK, 6x75 HEATER",
+        "Location": "EJ-1837",
+        "IsProblematic": "Yes",
+        "Preventative_Maintenance": "",
+        "Plant_Area": "DRYER A",
+        "Parent": "",
+        "YTD_Direct_Costs": "0",
+        "YTD_Rolled_Costs": "$0.00",
+        "Life_Direct_Costs": "12311.9",
+        "UniqueLocation": "1",
+        "Life_Rolled_Costs": "$12,311.90"
+      },
+      {
+        "Asset": "3611",
+        "Description": "FT, THERMAL MASS, FCI, ST102 SERIES",
+        "Location": "FT-18110",
+        "IsProblematic": "Yes",
+        "Preventative_Maintenance": "",
+        "Plant_Area": "DRYER A",
+        "Parent": "",
+        "YTD_Direct_Costs": "0",
+        "YTD_Rolled_Costs": "$0.00",
+        "Life_Direct_Costs": "562.5",
+        "UniqueLocation": "1",
+        "Life_Rolled_Costs": "$562.50"
+      },
+      {
+        "Asset": "3612",
+        "Description": "FT, THERMAL MASS, FCI, ST102 SERIES",
+        "Location": "FT-18111",
+        "IsProblematic": "Yes",
+        "Preventative_Maintenance": "",
+        "Plant_Area": "DRYER A",
+        "Parent": "",
+        "YTD_Direct_Costs": "0",
+        "YTD_Rolled_Costs": "$0.00",
+        "Life_Direct_Costs": "157.5",
+        "UniqueLocation": "1",
+        "Life_Rolled_Costs": "$157.50"
+      },
+      {
+        "Asset": "6660",
+        "Description": "PUMP, TACO, 1610-022s, IN-LINE PUMP",
+        "Location": "P-1837",
+        "IsProblematic": "Yes",
+        "Preventative_Maintenance": "",
+        "Plant_Area": "DRYER A",
+        "Parent": "",
+        "YTD_Direct_Costs": "0",
+        "YTD_Rolled_Costs": "$0.00",
+        "Life_Direct_Costs": "1590.26",
+        "UniqueLocation": "1",
+        "Life_Rolled_Costs": "$1,590.26"
+      }
+    ]
+  },
+  "tag_summary": [
+    {
+      "tag": "CH-DRA_COMB_AIR:BL1825.STAIND",
+      "total": 2000,
+      "missing_pct": 0.0,
+      "top_reason": [],
+      "top_datatype": [
+        [
+          "Running/Stopped",
+          2000
+        ]
+      ],
+      "state_breakdown": [
+        [
+          "Open/Running",
+          1905
+        ],
+        [
+          "Closed/Stopped",
+          95
+        ]
+      ],
+      "numeric_stats": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.9525
+      }
+    }
+  ],
+  "failure_aligned": [
+    {
+      "tag": "CH-DRA_COMB_AIR:BL1825.STAIND",
+      "event_time": "2023-01-06T09:50:00+00:00",
+      "window_count": 924,
+      "failure_mean": 1.0,
+      "healthy_mean": null,
+      "delta": null
+    },
+    {
+      "tag": "CH-DRA_COMB_AIR:BL1825.STAIND",
+      "event_time": "2023-01-11T04:50:00+00:00",
+      "window_count": 1153,
+      "failure_mean": 1.0,
+      "healthy_mean": 1.0,
+      "delta": 0.0
+    }
+  ],
+  "temporal_structure": {
+    "tag": "CH-DRA_COMB_AIR:BL1825.STAIND",
+    "lags": {
+      "1": 0.9778725652714466,
+      "2": 0.9557451305428931,
+      "3": 0.9336176958143382,
+      "4": 0.9114902610857829,
+      "5": 0.8893628263572303,
+      "6": 0.8782866418013526,
+      "7": 0.8672104572454749,
+      "8": 0.8561342726895971,
+      "9": 0.8450580881337193,
+      "10": 0.8339819035778416,
+      "11": 0.8229057190219639,
+      "12": 0.8118295344660861
+    }
+  },
+  "reliability": {
+    "mtbf_hours": 109.75960061443931,
+    "mttr_hours": 83.86467889908259,
+    "priority_counts": [
+      [
+        "4",
+        1723
+      ],
+      [
+        "2",
+        255
+      ],
+      [
+        "1",
+        13
+      ],
+      [
+        "",
+        9
+      ]
+    ],
+    "asset_counts": [
+      [
+        "Unknown",
+        714
+      ],
+      [
+        "2541, 2542, 2543, 2544, 2545, 2547, 2549, 2550, 2552, 2553, 2554, 2555, 2556, 2557, 2558, 2559",
+        473
+      ],
+      [
+        "2493, 2518",
+        192
+      ],
+      [
+        "2486, 2507",
+        140
+      ],
+      [
+        "2487, 2508",
+        98
+      ]
+    ]
+  },
+  "baseline_model": {
+    "threshold": 0.971224749153995,
+    "precision": 0.07611548556430446,
+    "recall": 0.9931506849315068,
+    "counts": {
+      "tp": 145,
+      "fp": 1760,
+      "tn": 94,
+      "fn": 1
+    }
+  }
+}
