@@ -14,10 +14,17 @@ It assumes:
 
 For each task below:
 - Codex may create notebooks/scripts as needed (e.g., under `notebooks/` or `src/`).
-- If the task is an “Analysis Task” (Phase 1), Codex should also create a **Markdown report** under `reports/` with the task ID in the filename, explaining:
+- If the task is an “Analysis Task” (Phase 1), Codex should also create a **markdown report** under `reports/` with the task ID in the filename, explaining:
   - What was done.
   - Key findings.
   - What it means for the project.
+
+  - For any plots created in this task:
+        - Save them as image files under `reports/figures/<task_id>/`.
+        - Embed them in the markdown report using standard markdown image syntax, e.g.:
+
+  `![Short caption](reports/figures/<task_id>/plot_name.png)`
+
 
 ---
 
