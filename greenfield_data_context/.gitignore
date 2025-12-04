@@ -23,8 +23,7 @@ Thumbs.db
 .env
 secrets.json
 
-# Large data directories
-volumes/
+
 # Uncomment below to ignore sample data if you don't want to commit it
 # samples/
 
