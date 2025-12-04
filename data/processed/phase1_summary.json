@@ -1,7 +1,7 @@
 {
   "assets": {
     "problem_asset_count": 14,
-    "area_counts": [
+    "area_counts_raw": [
       [
         "DRYER A",
         234
@@ -95,6 +95,32 @@
         1
       ]
     ],
+    "area_counts_clean": [
+      [
+        "DRYER A",
+        234
+      ],
+      [
+        "DDG",
+        28
+      ],
+      [
+        "DRYER D",
+        20
+      ],
+      [
+        "Unknown",
+        15
+      ],
+      [
+        "TGF",
+        11
+      ],
+      [
+        "ParsingError",
+        5
+      ]
+    ],
     "sample_problem_assets": [
       {
         "Asset": "10034",
@@ -108,7 +134,8 @@
         "YTD_Rolled_Costs": "$0.00",
         "Life_Direct_Costs": "10266.51",
         "UniqueLocation": "1",
-        "Life_Rolled_Costs": "$10,784.01"
+        "Life_Rolled_Costs": "$10,784.01",
+        "Plant_Area_Clean": "DRYER A"
       },
       {
         "Asset": "2868",
@@ -122,7 +149,8 @@
         "YTD_Rolled_Costs": "$0.00",
         "Life_Direct_Costs": "517.5",
         "UniqueLocation": "0",
-        "Life_Rolled_Costs": "$517.50"
+        "Life_Rolled_Costs": "$517.50",
+        "Plant_Area_Clean": "DRYER A"
       },
       {
         "Asset": "2538",
@@ -136,7 +164,8 @@
         "YTD_Rolled_Costs": "$0.00",
         "Life_Direct_Costs": "0",
         "UniqueLocation": "1",
-        "Life_Rolled_Costs": "$0.00"
+        "Life_Rolled_Costs": "$0.00",
+        "Plant_Area_Clean": "DRYER A"
       },
       {
         "Asset": "2539",
@@ -150,7 +179,8 @@
         "YTD_Rolled_Costs": "$0.00",
         "Life_Direct_Costs": "0",
         "UniqueLocation": "0",
-        "Life_Rolled_Costs": "$0.00"
+        "Life_Rolled_Costs": "$0.00",
+        "Plant_Area_Clean": "DRYER A"
       },
       {
         "Asset": "6996",
@@ -164,7 +194,8 @@
         "YTD_Rolled_Costs": "$0.00",
         "Life_Direct_Costs": "0",
         "UniqueLocation": "0",
-        "Life_Rolled_Costs": "$0.00"
+        "Life_Rolled_Costs": "$0.00",
+        "Plant_Area_Clean": "DRYER A"
       },
       {
         "Asset": "2561",
@@ -178,7 +209,8 @@
         "YTD_Rolled_Costs": "$0.00",
         "Life_Direct_Costs": "900",
         "UniqueLocation": "1",
-        "Life_Rolled_Costs": "$900.00"
+        "Life_Rolled_Costs": "$900.00",
+        "Plant_Area_Clean": "DRYER A"
       },
       {
         "Asset": "2563",
@@ -192,7 +224,8 @@
         "YTD_Rolled_Costs": "$0.00",
         "Life_Direct_Costs": "12311.9",
         "UniqueLocation": "1",
-        "Life_Rolled_Costs": "$12,311.90"
+        "Life_Rolled_Costs": "$12,311.90",
+        "Plant_Area_Clean": "DRYER A"
       },
       {
         "Asset": "3611",
@@ -206,7 +239,8 @@
         "YTD_Rolled_Costs": "$0.00",
         "Life_Direct_Costs": "562.5",
         "UniqueLocation": "1",
-        "Life_Rolled_Costs": "$562.50"
+        "Life_Rolled_Costs": "$562.50",
+        "Plant_Area_Clean": "DRYER A"
       },
       {
         "Asset": "3612",
@@ -220,7 +254,8 @@
         "YTD_Rolled_Costs": "$0.00",
         "Life_Direct_Costs": "157.5",
         "UniqueLocation": "1",
-        "Life_Rolled_Costs": "$157.50"
+        "Life_Rolled_Costs": "$157.50",
+        "Plant_Area_Clean": "DRYER A"
       },
       {
         "Asset": "6660",
@@ -234,7 +269,8 @@
         "YTD_Rolled_Costs": "$0.00",
         "Life_Direct_Costs": "1590.26",
         "UniqueLocation": "1",
-        "Life_Rolled_Costs": "$1,590.26"
+        "Life_Rolled_Costs": "$1,590.26",
+        "Plant_Area_Clean": "DRYER A"
       }
     ]
   },
@@ -356,5 +392,79 @@
       "tn": 94,
       "fn": 1
     }
-  }
+  },
+  "tag_asset_links": [
+    {
+      "asset_id": "10034",
+      "asset_name": "BLOWER, HOWDEN, FAN MODEL E40S-8700 SWSI CCW TAU Arrg't7",
+      "location": "BL-1829",
+      "plant_area": "DRYER A",
+      "tag_full": "CH-DRA_PROC_AIR:BL1829.STAIND",
+      "tag_role": "Status indication (open/closed, run/stop)",
+      "comment": "BL"
+    },
+    {
+      "asset_id": "2868",
+      "asset_name": "600HP / 1200RPM / TEFC / 575V/3PH/60HZ / 5810B FRAME",
+      "location": "BL-1829",
+      "plant_area": "DRYER A",
+      "tag_full": "CH-DRA_PROC_AIR:BL1829.STAIND",
+      "tag_role": "Status indication (open/closed, run/stop)",
+      "comment": "BL"
+    },
+    {
+      "asset_id": "2561",
+      "asset_name": "DRYER A - DDG PRODUCT COOLER",
+      "location": "E-1834",
+      "plant_area": "DRYER A",
+      "tag_full": "CH-DR_DUSTCOLL:E1834.STAIND",
+      "tag_role": "Status indication (open/closed, run/stop)",
+      "comment": "E"
+    },
+    {
+      "asset_id": "6660",
+      "asset_name": "PUMP, TACO, 1610-022s, IN-LINE PUMP",
+      "location": "P-1837",
+      "plant_area": "DRYER A",
+      "tag_full": "CH-DR_UTIL_WTR:P1837.STAIND",
+      "tag_role": "Status indication (open/closed, run/stop)",
+      "comment": "P"
+    },
+    {
+      "asset_id": "6661",
+      "asset_name": "MOTOR / 0.33HP / 1750RPM / TEFC / 575V/3PH/60HZ / FRAME# W56C",
+      "location": "P-1837",
+      "plant_area": "DRYER A",
+      "tag_full": "CH-DR_UTIL_WTR:P1837.STAIND",
+      "tag_role": "Status indication (open/closed, run/stop)",
+      "comment": "P"
+    },
+    {
+      "asset_id": "2876",
+      "asset_name": "ROTARY VALVE, KICE, MODEL VJX 16x12x12",
+      "location": "RV-1834",
+      "plant_area": "DRYER A",
+      "tag_full": "CH-DR_DUSTCOLL:RV1834.STAIND",
+      "tag_role": "Status indication (open/closed, run/stop)",
+      "comment": "RV"
+    },
+    {
+      "asset_id": "3060",
+      "asset_name": "MOTOR / 1HP / 1725RPM / TEFC / 575V/3PH/60HZ / FRAME# 145C",
+      "location": "RV-1834",
+      "plant_area": "DRYER A",
+      "tag_full": "CH-DR_DUSTCOLL:RV1834.STAIND",
+      "tag_role": "Status indication (open/closed, run/stop)",
+      "comment": "RV"
+    },
+    {
+      "asset_id": "3411",
+      "asset_name": "GEARBOX, SM CYCLODRIVE CNHX-6100-Y",
+      "location": "RV-1834",
+      "plant_area": "DRYER A",
+      "tag_full": "CH-DR_DUSTCOLL:RV1834.STAIND",
+      "tag_role": "Status indication (open/closed, run/stop)",
+      "comment": "RV"
+    }
+  ]
 }

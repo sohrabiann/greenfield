@@ -230,6 +230,8 @@ Codex should treat these as **next steps** after the existing Phase 0 & Phase 1 
 - Updated EDA in `reports/01_tag_and_asset_level_eda.md` to include a small set of these additional tags.
 
 ---
+Codex has now implemented Plant_Area_Clean and area_counts_clean to isolate parsing errors, and created docs/dryer_problem_asset_tags.csv as a first-pass mapping from Dryer A problem assets to their status indication tags (*.STAIND).
+
 
 ### 3.3 Task C – Re-run failure-aligned & temporal analysis on richer tags
 

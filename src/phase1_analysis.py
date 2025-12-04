@@ -1,7 +1,8 @@
 import csv
 import datetime as dt
 import json
-from collections import Counter
+import re
+from collections import Counter, defaultdict
 from typing import Dict, List, Tuple
 
 BASE_PATH = 'greenfield_data_context/samples/'
@@ -9,12 +10,20 @@ BASE_PATH = 'greenfield_data_context/samples/'
 DCS_FILE = BASE_PATH + 'dcsdata_silver_sample.csv.csv'
 SHUTDOWN_FILE = BASE_PATH + 'dryerashutdownsgold_sample.csv.csv'
 ASSET_FILE = BASE_PATH + 'assetlist_silver_sample.csv.csv'
+INSTRUMENTATION_FILE = BASE_PATH + 'instrumentation_descriptions_silver_sample.csv.csv'
 INSTR_STATS_FILE = BASE_PATH + 'instrumentation_statistics_gold_sample.csv.csv'
 WORKORDER_FILE = BASE_PATH + 'workordersdetaledviewgold_sample.csv.csv'
 
 STATE_MAP = {
     'Open/Running': 1.0,
     'Closed/Stopped': 0.0,
+}
+
+ALLOWED_PLANT_AREAS = {
+    'DRYER A',
+    'DRYER D',
+    'DDG',
+    'TGF',
 }
 
 
@@ -42,14 +51,38 @@ def load_csv(path: str) -> List[Dict[str, str]]:
         return list(csv.DictReader(f))
 
 
+def clean_plant_area(value: str) -> str:
+    raw = (value or '').strip()
+    if not raw:
+        return 'Unknown'
+    # Remove obvious CSV bleed-through by trimming to the first comma-separated token
+    if ',' in raw:
+        raw = raw.split(',', 1)[0]
+    cleaned = raw.strip('"').strip().upper()
+    if cleaned in ALLOWED_PLANT_AREAS:
+        return cleaned
+    # Handle patterns like " SIZE 454" or long malformed strings
+    if len(cleaned) > 20 or re.search(r'\\n|\\"', cleaned):
+        return 'ParsingError'
+    return 'Unknown'
+
+
 def summarize_assets():
     rows = load_csv(ASSET_FILE)
-    problem_assets = [r for r in rows if r.get('IsProblematic', '').lower() == 'yes' or r.get('IsProblematic') == '1']
-    area_counts = Counter(r.get('Plant_Area', '') for r in rows)
+    for r in rows:
+        r['Plant_Area_Clean'] = clean_plant_area(r.get('Plant_Area'))
+    problem_assets = [
+        r for r in rows if r.get('Plant_Area_Clean') != 'ParsingError' and (
+            r.get('IsProblematic', '').lower() == 'yes' or r.get('IsProblematic') == '1'
+        )
+    ]
+    area_counts_raw = Counter(r.get('Plant_Area', '') for r in rows)
+    area_counts_clean = Counter(r.get('Plant_Area_Clean', '') for r in rows)
     return {
         'problem_asset_count': len(problem_assets),
         'problem_assets': problem_assets,
-        'area_counts': area_counts,
+        'area_counts_raw': area_counts_raw,
+        'area_counts_clean': area_counts_clean,
     }
 
 
@@ -207,6 +240,37 @@ def reliability_metrics(shutdowns, workorders):
     }
 
 
+def build_tag_asset_links(problem_assets: List[Dict[str, str]]):
+    instrument_rows = load_csv(INSTRUMENTATION_FILE)
+
+    def normalize(text: str) -> str:
+        return re.sub(r'[^A-Z0-9]', '', (text or '').upper())
+
+    instr_by_loc = defaultdict(list)
+    for row in instrument_rows:
+        instr_by_loc[normalize(row.get('INstrumentation_Location', ''))].append(row)
+
+    links = []
+    seen = set()
+    for asset in problem_assets:
+        loc_key = normalize(asset.get('Location', ''))
+        for row in instr_by_loc.get(loc_key, []):
+            key = (asset.get('Asset'), row.get('Tag_Full'))
+            if key in seen:
+                continue
+            seen.add(key)
+            links.append({
+                'asset_id': asset.get('Asset'),
+                'asset_name': asset.get('Description'),
+                'location': asset.get('Location'),
+                'plant_area': asset.get('Plant_Area_Clean'),
+                'tag_full': row.get('Tag_Full'),
+                'tag_role': row.get('Instrumentation_Data_Type_Meaning'),
+                'comment': row.get('Instrumentation_Type_'),
+            })
+    return links
+
+
 def baseline_model(tag_summary, shutdowns):
     label_window = dt.timedelta(hours=12)
     datasets = []
@@ -251,6 +315,7 @@ def main():
     dcs_summary = summarize_dcs()
     shutdowns = load_shutdowns()
     workorders = load_csv(WORKORDER_FILE)
+    tag_links = build_tag_asset_links(assets['problem_assets'])
     aligned = failure_aligned(dcs_summary, shutdowns)
     temporal = temporal_structure(dcs_summary)
     reliability = reliability_metrics(shutdowns, workorders)
@@ -259,7 +324,8 @@ def main():
     output = {
         'assets': {
             'problem_asset_count': assets['problem_asset_count'],
-            'area_counts': assets['area_counts'].most_common(),
+            'area_counts_raw': assets['area_counts_raw'].most_common(),
+            'area_counts_clean': assets['area_counts_clean'].most_common(),
             'sample_problem_assets': assets['problem_assets'][:10],
         },
         'tag_summary': [
@@ -282,10 +348,18 @@ def main():
             'asset_counts': reliability['asset_counts'].most_common(5),
         },
         'baseline_model': baseline,
+        'tag_asset_links': tag_links,
     }
 
     with open('data/processed/phase1_summary.json', 'w') as f:
         json.dump(output, f, indent=2, default=str)
+
+    if tag_links:
+        fieldnames = ['asset_id', 'asset_name', 'location', 'plant_area', 'tag_full', 'tag_role', 'comment']
+        with open('docs/dryer_problem_asset_tags.csv', 'w', newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(tag_links)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,9 @@
+asset_id,asset_name,location,plant_area,tag_full,tag_role,comment
+10034,"BLOWER, HOWDEN, FAN MODEL E40S-8700 SWSI CCW TAU Arrg't7",BL-1829,DRYER A,CH-DRA_PROC_AIR:BL1829.STAIND,"Status indication (open/closed, run/stop)",BL
+2868,600HP / 1200RPM / TEFC / 575V/3PH/60HZ / 5810B FRAME,BL-1829,DRYER A,CH-DRA_PROC_AIR:BL1829.STAIND,"Status indication (open/closed, run/stop)",BL
+2561,DRYER A - DDG PRODUCT COOLER,E-1834,DRYER A,CH-DR_DUSTCOLL:E1834.STAIND,"Status indication (open/closed, run/stop)",E
+6660,"PUMP, TACO, 1610-022s, IN-LINE PUMP",P-1837,DRYER A,CH-DR_UTIL_WTR:P1837.STAIND,"Status indication (open/closed, run/stop)",P
+6661,MOTOR / 0.33HP / 1750RPM / TEFC / 575V/3PH/60HZ / FRAME# W56C,P-1837,DRYER A,CH-DR_UTIL_WTR:P1837.STAIND,"Status indication (open/closed, run/stop)",P
+2876,"ROTARY VALVE, KICE, MODEL VJX 16x12x12",RV-1834,DRYER A,CH-DR_DUSTCOLL:RV1834.STAIND,"Status indication (open/closed, run/stop)",RV
+3060,MOTOR / 1HP / 1725RPM / TEFC / 575V/3PH/60HZ / FRAME# 145C,RV-1834,DRYER A,CH-DR_DUSTCOLL:RV1834.STAIND,"Status indication (open/closed, run/stop)",RV
+3411,"GEARBOX, SM CYCLODRIVE CNHX-6100-Y",RV-1834,DRYER A,CH-DR_DUSTCOLL:RV1834.STAIND,"Status indication (open/closed, run/stop)",RV
