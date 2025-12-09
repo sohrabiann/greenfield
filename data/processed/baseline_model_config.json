@@ -1,0 +1,70 @@
+{
+  "BL-1829": {
+    "tags": [
+      "CH-DRA_PROC_AIR:IT18179.MEAS",
+      "CH-DRA_PROC_AIR:TT18179A.MEAS",
+      "CH-DRA_PROC_AIR:TT18179B.MEAS",
+      "CH-DRA_PROC_AIR:TT18179C.MEAS"
+    ],
+    "n_train_failures": 4,
+    "n_test_failures": 2,
+    "n_positive_samples": 4,
+    "n_negative_samples": 8,
+    "train_failures": [
+      "2023-03-03T20:57:31.947000+00:00",
+      "2023-03-16T08:44:44.447000+00:00",
+      "2023-10-23T11:16:35.880000+00:00",
+      "2023-12-18T13:21:39.403000+00:00"
+    ],
+    "test_failures": [
+      "2024-02-09T08:57:53.423000+00:00",
+      "2025-03-17T15:33:28.310000+00:00"
+    ],
+    "status": "ready_for_training"
+  },
+  "RV-1834": {
+    "tags": [
+      "CH-DR_DUSTCOLL:IT18211.MEAS",
+      "CH-DR_DUSTCOLL:IT18216.MEAS",
+      "CH-DR_DUSTCOLL:TT18217.MEAS"
+    ],
+    "n_train_failures": 3,
+    "n_test_failures": 2,
+    "n_positive_samples": 3,
+    "n_negative_samples": 6,
+    "train_failures": [
+      "2023-11-22T08:55:03.260000+00:00",
+      "2024-06-19T05:01:18.180000+00:00",
+      "2024-06-19T13:47:52.013000+00:00"
+    ],
+    "test_failures": [
+      "2024-07-31T12:55:55.027000+00:00",
+      "2025-07-02T17:59:14.493000+00:00"
+    ],
+    "status": "ready_for_training"
+  },
+  "DC-1834": {
+    "tags": [
+      "CH-DR_DUSTCOLL:IT18211.MEAS",
+      "CH-DR_DUSTCOLL:TT18217.MEAS"
+    ],
+    "n_train_failures": 7,
+    "n_test_failures": 2,
+    "n_positive_samples": 7,
+    "n_negative_samples": 14,
+    "train_failures": [
+      "2023-02-10T07:53:29.950000+00:00",
+      "2023-11-03T05:07:08.837000+00:00",
+      "2024-01-25T16:47:07.740000+00:00",
+      "2024-02-12T07:32:20.747000+00:00",
+      "2024-08-21T13:47:34.383000+00:00",
+      "2024-09-27T08:27:48.940000+00:00",
+      "2024-12-16T17:37:06.363000+00:00"
+    ],
+    "test_failures": [
+      "2025-03-19T09:06:07.170000+00:00",
+      "2025-06-09T16:08:03.043000+00:00"
+    ],
+    "status": "ready_for_training"
+  }
+}

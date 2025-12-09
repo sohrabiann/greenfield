@@ -210,7 +210,7 @@ def evaluate_binary_classifier(
     }
 
 
-def train_baseline_model(location: str, selected_tags: List[str], max_files: int = 5) -> Dict:
+def train_baseline_model(location: str, selected_tags: List[str], max_files: int = None) -> Dict:
     """Train a baseline model for one problem asset.
     
     Args:
@@ -356,7 +356,7 @@ def main():
     all_results = {}
     
     for location, tags in model_config.items():
-        results = train_baseline_model(location, tags, max_files=5)
+        results = train_baseline_model(location, tags, max_files=None)
         if results:
             all_results[location] = results
     

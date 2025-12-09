@@ -99,11 +99,16 @@ def parse_value(val: str, data_type: Optional[str] = None) -> Optional[float]:
 
 
 def get_dcs_volume_files() -> List[Path]:
-    """Get all DCS extract sample files."""
+    """Get all DCS extract files (full or samples)."""
     if not DCS_VOLUMES_PATH.exists():
         return []
     
-    # Get all sample files (not the filelist CSVs)
+    # Check for full dataset first
+    full_data = DCS_VOLUMES_PATH / 'AllDCSData.csv'
+    if full_data.exists():
+        return [full_data]
+    
+    # Otherwise, get all sample files (not the filelist CSVs)
     files = sorted([
         f for f in DCS_VOLUMES_PATH.glob('dcsrawdataextracts_sample*.csv')
         if not f.name.endswith('filelist.csv')

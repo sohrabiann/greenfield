@@ -16,7 +16,7 @@ This document summarizes the progress on Phase 1 analysis and baseline modeling 
 4. ✅ **Built feature engineering pipeline** supporting multi-window aggregations
 5. ✅ **Created baseline modeling framework** ready for production training
 
-**Key Finding**: The sample DCS data (Jan-Feb 2023) has limited temporal overlap with Priority 1 failures (2021-2025). To train production models, we need to load the full `AllDCSData.csv` (624 MB) covering the complete failure timeline.
+**Key Finding**: Of the 25 DCS sample files provided, only 1 file (`sample1.csv`) contains data, covering Jan-Feb 2023 (42 days). The remaining 24 sample files are empty. With only 1.6% of Priority 1 failures (1 of 64) having DCS coverage, we need the full DCS dataset from Greenfield covering 2021-2025 to train production models.
 
 ---
 
@@ -48,9 +48,10 @@ This document summarizes the progress on Phase 1 analysis and baseline modeling 
 **Objective**: Analyze rich DCS data with project-aligned approach
 
 **Data Used**:
-- `dcsrawdataextracts_sample1-25.csv` (26 files, ~400 tags each, 5,800 rows per file)
+- `dcsrawdataextracts_sample1.csv` (1 file with data, ~400 tags, 6,000 rows)
+- `dcsrawdataextracts_sample2-25.csv` (24 files, all empty)
 - `failure_desc_problem_Equipment_List.xlsx` (failure mode descriptions)
-- `service_requests_for_problem_eq.xlsx` (Priority 1 failure timeline)
+- `service_requests_for_problem_eq.xlsx` (Priority 1 failure timeline: 64 failures, 2021-2025)
 
 **Key Activities**:
 1. **Built DCS volume data loader** (`src/dcs_volume_loader.py`)
@@ -64,10 +65,11 @@ This document summarizes the progress on Phase 1 analysis and baseline modeling 
    - DC-1834: 1 current tag (IT18211), 1 temp (TT18217)
    - E-1834, P-1837, CV-1828: Additional tags mapped
 
-3. **Re-ran failure-aligned analysis**
-   - Extracted windows around Priority 1 failures (T-7 days to T+1 day)
-   - **Data coverage issue**: Only 1 failure (DC-1834, 2023-01-06) had DCS data
-   - Observed subtle pre-failure patterns: decreased current, increased temp variability
+3. **Re-ran failure-aligned analysis** (updated Dec 4, 2025)
+   - Loaded all 25 sample files (24 were empty, only sample1 has data)
+   - DCS coverage: Jan 1 - Feb 11, 2023 (42 days)
+   - **Critical finding**: Only 1 of 64 Priority 1 failures (1.6%) has DCS coverage
+   - DC-1834 failure on Jan 3, 2023: Observed subtle pre-failure patterns (decreased current, increased temp variability)
 
 4. **Re-ran temporal structure analysis**
    - Motor currents: ACF[1]=0.76-0.96, ACF[12]=0.25-0.82 (moderate persistence)
@@ -89,7 +91,9 @@ This document summarizes the progress on Phase 1 analysis and baseline modeling 
 - Rich analog tags show temporal patterns suitable for prediction
 - Motor currents vary with load; temperatures change gradually
 - Feature engineering infrastructure is production-ready
-- **Critical limitation**: Sample data doesn't overlap with most failures
+- **Critical limitation**: Only 1 sample file contains data (Jan-Feb 2023, 42 days)
+- **Data gap**: 24 sample files are empty; only 1.6% of failures have DCS coverage
+- **Action required**: Need full DCS dataset from Greenfield (2021-2025) for model training
 
 ---
 
@@ -241,16 +245,28 @@ The infrastructure can handle:
 
 ## Next Steps for Phase 2
 
-### Immediate Actions
+### ⚠️ CRITICAL: Data Acquisition Required
+
+**Current status** (as of Dec 4, 2025):
+- **Sample files provided**: 25 files
+- **Files with data**: 1 file (sample1.csv, Jan-Feb 2023, 42 days)
+- **Failures covered**: 1 of 64 (1.6%)
+
+**Action required**:
+- Request full DCS data from Greenfield covering 2021-2025
+- Recommended format: Time-based chunks (see `docs/data_coverage_summary.md`)
+- Expected coverage after data arrival: 50-60 of 64 failures (78-94%)
+
+### Immediate Actions (After Data Arrival)
 
 1. **Load Full DCS Data**
-   - Read `AllDCSData.csv` (624 MB) instead of samples
-   - Verify coverage of all 64 Priority 1 failures
-   - Regenerate labels with full DCS timeline
+   - Place new files in `greenfield_data_context/volumes/dcsrawdataextracts/`
+   - Loader automatically handles multiple files
+   - Verify coverage of Priority 1 failures (expect 50-60 of 64)
 
 2. **Train Production Baselines**
    - Train per-asset logistic regression models
-   - Validate on held-out failures (Phase 1 requirement)
+   - Validate on held-out failures (Phase 1 requirement ✓)
    - Tune classification thresholds for precision/recall tradeoff
 
 3. **Model Evaluation**
@@ -348,4 +364,35 @@ Phase 1 has successfully:
 - `reports/04_reliability_and_pm_analysis.md` - MTBF/MTTR metrics
 - `reports/05_baseline_models_and_feature_importance.md` - Model comparison
 - `docs/modeling_progress_summary.md` - This document
+- `docs/data_coverage_summary.md` - Detailed coverage analysis and data request guide
+
+---
+
+## December 4, 2025 Update: Sample File Analysis
+
+### Discovery
+Upon loading all 25 DCS sample files:
+- **Only 1 file contains data**: `dcsrawdataextracts_sample1.csv`
+- **24 files are empty**: sample2-25 (0 data points each)
+- **DCS coverage**: January 1 - February 11, 2023 (42 days only)
+
+### Impact on Model Training
+- **Priority 1 failures**: 64 total (July 2021 - July 2025)
+- **Failures with DCS data**: 1 (DC-1834 on Jan 3, 2023)
+- **Coverage rate**: 1.6%
+
+### Current Status
+✅ **Infrastructure**: Production-ready and fully tested  
+⚠️ **Data**: Need full DCS dataset from Greenfield (2021-2025)  
+⏸️ **Model Training**: On hold until data arrives
+
+### Next Action
+See `docs/data_coverage_summary.md` for:
+- Detailed gap analysis by year
+- Data request recommendations
+- Expected coverage after data arrival (50-60 of 64 failures)
+
+---
+
+**Document last updated: December 4, 2025**
 

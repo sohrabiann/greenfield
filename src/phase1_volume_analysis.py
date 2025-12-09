@@ -135,7 +135,7 @@ def compute_window_statistics(
 def analyze_failure_aligned_patterns(
     location: str,
     selected_tags: List[str],
-    max_files: int = 5
+    max_files: int = None
 ) -> Dict:
     """Analyze pre-failure patterns for a specific location.
     
@@ -248,7 +248,7 @@ def compute_autocorrelation(values: List[float], max_lag: int = 12) -> List[floa
 def analyze_temporal_structure(
     location: str,
     selected_tags: List[str],
-    max_files: int = 5
+    max_files: int = None
 ) -> Dict:
     """Analyze temporal structure and autocorrelation.
     
@@ -353,10 +353,10 @@ def main():
         print(f"{'#'*70}")
         
         # Failure-aligned analysis
-        failure_results = analyze_failure_aligned_patterns(location, tags, max_files=5)
+        failure_results = analyze_failure_aligned_patterns(location, tags, max_files=None)
         
         # Temporal structure analysis
-        temporal_results = analyze_temporal_structure(location, tags, max_files=5)
+        temporal_results = analyze_temporal_structure(location, tags, max_files=None)
         
         all_results[location] = {
             'failure_aligned': failure_results,

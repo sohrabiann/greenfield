@@ -1,0 +1,19 @@
+AllDCSData.csv Coverage Report
+======================================================================
+
+File size: 595.62 MB
+Total rows: 146,443
+Columns: 430
+Date range: 2023-01-01 0:00 to 2025-10-14 0:00
+Duration: 1017 days
+
+Priority 1 failures: 64
+Covered failures: 30 (46.9%)
+
+By asset:
+  DC-1834: 9
+  BL-1829: 6
+  CV-1828: 5
+  RV-1834: 5
+  EJ-1837: 3
+  E-1834: 2

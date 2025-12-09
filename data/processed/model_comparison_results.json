@@ -1,0 +1,75 @@
+{
+  "asset": "BL-1829",
+  "model_1_with_removal": {
+    "n_features": 63,
+    "n_dropped": 33,
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 4,
+      "true_negatives": 8,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "roc_auc": 1.0
+    }
+  },
+  "model_2_keep_all": {
+    "n_features": 96,
+    "n_dropped": 0,
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": 4,
+      "true_negatives": 8,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "roc_auc": 1.0
+    }
+  },
+  "performance_difference": {
+    "roc_auc_diff": 0.0,
+    "accuracy_diff": 0.0,
+    "precision_diff": 0.0,
+    "recall_diff": 0.0
+  },
+  "dropped_features": [
+    "w24h_CH-DRA_PROC_AIR:IT18179.MEAS_min",
+    "w24h_CH-DRA_PROC_AIR:IT18179.MEAS_last",
+    "w24h_CH-DRA_PROC_AIR:TT18179A.MEAS_min",
+    "w24h_CH-DRA_PROC_AIR:TT18179A.MEAS_max",
+    "w24h_CH-DRA_PROC_AIR:TT18179A.MEAS_last",
+    "w24h_CH-DRA_PROC_AIR:TT18179B.MEAS_min",
+    "w24h_CH-DRA_PROC_AIR:TT18179B.MEAS_max",
+    "w24h_CH-DRA_PROC_AIR:TT18179B.MEAS_last",
+    "w24h_CH-DRA_PROC_AIR:TT18179C.MEAS_mean",
+    "w24h_CH-DRA_PROC_AIR:TT18179C.MEAS_min",
+    "w24h_CH-DRA_PROC_AIR:TT18179C.MEAS_max",
+    "w24h_CH-DRA_PROC_AIR:TT18179C.MEAS_last",
+    "w72h_CH-DRA_PROC_AIR:IT18179.MEAS_count",
+    "w72h_CH-DRA_PROC_AIR:IT18179.MEAS_slope",
+    "w72h_CH-DRA_PROC_AIR:TT18179A.MEAS_mean",
+    "w72h_CH-DRA_PROC_AIR:TT18179A.MEAS_min",
+    "w72h_CH-DRA_PROC_AIR:TT18179A.MEAS_last",
+    "w72h_CH-DRA_PROC_AIR:TT18179B.MEAS_mean",
+    "w72h_CH-DRA_PROC_AIR:TT18179B.MEAS_min",
+    "w72h_CH-DRA_PROC_AIR:TT18179B.MEAS_max",
+    "w72h_CH-DRA_PROC_AIR:TT18179B.MEAS_last",
+    "w72h_CH-DRA_PROC_AIR:TT18179C.MEAS_mean",
+    "w72h_CH-DRA_PROC_AIR:TT18179C.MEAS_std",
+    "w72h_CH-DRA_PROC_AIR:TT18179C.MEAS_last",
+    "w168h_CH-DRA_PROC_AIR:IT18179.MEAS_count",
+    "w168h_CH-DRA_PROC_AIR:IT18179.MEAS_last",
+    "w168h_CH-DRA_PROC_AIR:TT18179A.MEAS_last",
+    "w168h_CH-DRA_PROC_AIR:TT18179B.MEAS_mean",
+    "w168h_CH-DRA_PROC_AIR:TT18179B.MEAS_min",
+    "w168h_CH-DRA_PROC_AIR:TT18179B.MEAS_last",
+    "w168h_CH-DRA_PROC_AIR:TT18179C.MEAS_mean",
+    "w168h_CH-DRA_PROC_AIR:TT18179C.MEAS_max",
+    "w168h_CH-DRA_PROC_AIR:TT18179C.MEAS_last"
+  ],
+  "important_dropped_count": 6
+}
